@@ -1,0 +1,27 @@
+const skills = {
+    html: ['HTML, CSS',
+            'Flexbox, Grid',
+            'Семантическая верстка',
+            'Псевдоэлементы',
+            'Кроссбраузерность',
+            'Адаптивность',
+            'Bootstrap',
+            'Препроцессоры LESS, SCSS',
+        ],
+    js: ['ES6 синтаксис',
+            'Node.js',
+            'DOM API',
+            'События',
+            'Асинхронный код',
+            'Взаимодействие с сервером',
+            'React, JSX',
+            'Основы Redux',
+        ],
+    layout: ['Adobe Photoshop',
+                'Figma',
+                'Avocode',
+                'Zeplin',
+            ],
+    }
+
+    export default skills;

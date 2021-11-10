@@ -11,3 +11,93 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar-brand {
+	margin-right: 20rem;
+}
+
+.avatar-img {
+	border-radius: 50%;
+}
+
+section {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+h1, h2 {
+	margin-bottom: 25px;
+}
+
+.skills ul {
+	padding-left: 0;
+	list-style-type: none;
+}
+.skills ul li:before {
+	font-family: FontAwesome;
+	content: '\f00c';
+	margin-right: 0.5rem;
+}
+
+.text-sm {
+	font-size: 14px;
+}
+
+.card-link {
+	text-decoration: none;
+	color: #212529;
+}
+
+.card-link:hover .card {
+	border: 1px solid #6c757d;
+}
+
+.card-link:hover .card-body {
+	color: #6C757D;
+}
+
+.gallery {
+	margin-top: 25px;
+}
+
+.image {
+	margin-bottom: 15px;
+}
+
+.gallery-tabs .nav-link {
+	color: #212529;
+}
+
+footer .btn-link {
+	text-decoration: none;
+}
+
+.fab, .fas {
+	font-family: FontAwesome;
+}
+
+.hexlet {
+	display: inline-block;
+	width: 17.16px;
+	height: 20px;
+	background-image: url('./img/icons/hexlet.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.accordion-button {
+	font-weight: 500;
+	background: rgb(248 249 250);
+}
+
+.contact a {
+	text-decoration: none;
+	color: #212529;
+}
+
+footer {
+	background: rgb(248 249 250);
+	padding-top: 15px;
+}
+ 
+
