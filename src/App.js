@@ -1,6 +1,7 @@
 import React from 'react';
 import AboutMe from './components/AboutMe';
 import Header from './components/Header';
+import Photo from './components/Photo';
 import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
 
@@ -30,6 +31,7 @@ class App extends React.Component {
           <AboutMe />
           <Skills />
           <Portfolio />
+          <Photo />
         </div>
       );
   }

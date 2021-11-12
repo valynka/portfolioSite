@@ -13,19 +13,19 @@ const portfolio = [
         img: concomitant,
         desc: 'Макет сверстан в рамках курса GeekBrains HTML5 и CSS3. Использован SCSS.',
         alt: 'Макет concomitant',
-        link: '',
+        link: 'https://valynka.github.io/concomitant/',
     },
     {
         img: medical,
         desc: 'Макет сверстан в рамках курса GeekBrains HTML5 и CSS3 с применением технологии Grid. Адаптивная вертска.',
         alt: 'Макет медицинского сайта',
-        link: '',
+        link: 'https://valynka.github.io/medical-site/',
     },
     {
         img: site,
         desc: 'Макет сверстан в рамках курса GeekBrains HTML5 и CSS3 с использованием Flexbox.',
         alt: 'Макет Flexbox',
-        link: '',
+        link: 'https://valynka.github.io/site-layout/',
     },
     {
         img: gogolMogol,
@@ -37,25 +37,25 @@ const portfolio = [
         img: sortableTable,
         desc: 'Таблица с возможностью сортировки по нажатию на заголовок. Компонент написан на чистом js в рамках курса "JavaScript/DOM/Интерфейсы" для программистов от JavaScript.ru.',
         alt: 'Таблица с возможностью сортировки',
-        link: '',
+        link: 'https://valynka.github.io/sortable-table/',
     },
     {
         img: slider,
         desc: 'Слайдер с возможностью выбора диапазона от и до. Написан на чистом js в рамках курса "JavaScript/DOM/Интерфейсы" для программистов от JavaScript.ru.',
         alt: 'Слайдер с возможностью выбора диапазона',
-        link: '',
+        link: 'https://valynka.github.io/double-slider/',
     },
     {
         img: sortableList,
         desc: 'Список с сортировкой drag-and-drop. Написан на чистом js в рамках курса "JavaScript/DOM/Интерфейсы" для программистов от JavaScript.ru.',
         alt: 'Список с сортировкой drag-and-drop',
-        link: '',
+        link: 'https://valynka.github.io/sortable-list/',
     },
     {
         img: mathnet,
         desc: 'Редизайн и верстка портала Math-Net. Адаптив. Использован LESS. В работу до сих пор не взяли.',
         alt: 'Math-Net',
-        link: '',
+        link: 'https://valynka.github.io/mathnet.local/',
     },
 ];
 
