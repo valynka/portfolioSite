@@ -6,7 +6,7 @@ import Education from './Education.js';
 
 function Skills () {
     return (
-        <section className="skills">
+        <section className="skills" id="skills">
             <div className="container-xl">
                 <h2>Навыки и образование</h2>
                 <div className="row">

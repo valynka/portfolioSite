@@ -5,7 +5,7 @@ import _ from 'lodash';
 
 function Portfolio () {
     return (
-        <section className="portfolio">
+        <section className="portfolio" id="portfolio">
 		    <div className="container-xl">
 			    <h2>Примеры работ</h2>
 			    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">

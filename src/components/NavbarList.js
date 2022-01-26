@@ -17,7 +17,7 @@ function NavbarList (props) {
                     <a className="nav-link" href="#about">Обо мне</a>
                 </li>
                 <li className={dropDownItemStyle}>
-                    <a className="nav-link dropdown-toggle" href="#web" onClick={dropDownHandler}>
+                    <a className="nav-link dropdown-toggle" href="#!" onClick={dropDownHandler}>
                         Веб-разработка
                     </a>
                     <ul className={dropDownListStyle}>

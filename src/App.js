@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutMe from './components/AboutMe';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Photo from './components/Photo';
 import Portfolio from './components/Portfolio';
@@ -32,6 +33,7 @@ class App extends React.Component {
           <Skills />
           <Portfolio />
           <Photo />
+          <Footer />
         </div>
       );
   }
