@@ -3,35 +3,30 @@ import AboutMe from './components/AboutMe';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Photo from './components/Photo';
-import Portfolio from './components/Portfolio';
-import Skills from './components/Skills';
+import Frontend from './components/Frontend';
+import GetCourse from './components/GetCourse';
 
 class App extends React.Component {
   state = {
 		uiState: {
-			webDevMenuShown: false,
+			webMenuShown: false,
 		},
 	};
 
-  dropDownHandler = (e) => {
+  webMenuHandler = (e) => {
     e.preventDefault();
-		const { webDevMenuShown } = this.state.uiState;
-		this.setState({uiState: {webDevMenuShown: !webDevMenuShown}});
+		const { webMenuShown } = this.state.uiState;
+		this.setState({uiState: {webMenuShown: !webMenuShown}});
 	}
 
-  closeDropDownHandler = () => {
-    const { webDevMenuShown } = this.state.uiState;
-    if (webDevMenuShown) this.setState({uiState: {webDevMenuShown: !webDevMenuShown}});
-  }
-
   render () {
-    const { webDevMenuShown } = this.state.uiState;
+    const { webMenuShown } = this.state.uiState;
     return (
-        <div onClick={this.closeDropDownHandler}>
-          <Header dropDownHandler={this.dropDownHandler} webDevMenuShown={webDevMenuShown} />
+        <div>
+          <Header webMenuHandler={this.webMenuHandler} webMenuShown={webMenuShown} />
           <AboutMe />
-          <Skills />
-          <Portfolio />
+          <GetCourse />
+          <Frontend />
           <Photo />
           <Footer />
         </div>

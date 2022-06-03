@@ -13,4 +13,19 @@ function makePhotoColl(q, folder, alt) {
     return (coll);
 };
 
+export function makeGcColl() {
+    const coll = [];
+    for (let i = 1; i < 25; i += 1) {
+        let num = (i < 10) ? `0${i}` : i;
+        const gcObj = {
+            img: `/gc/gc-${num}.jpg`,
+            alt: '',
+            title: '',
+            desc: '',
+        }
+        coll.push(gcObj);
+    }
+    return (coll);
+}
+
 export default makePhotoColl;
