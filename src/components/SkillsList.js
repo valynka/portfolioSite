@@ -4,7 +4,7 @@ import _ from 'lodash';
 function SkillsList (props) {
     const { items, name } = props;
     return (
-        <div className="col">
+        <div className="col-sm-4 col-12">
             <h5>{name}</h5>
             <ul>
                 {items.map((item) => <li key={_.uniqueId()}>{item}</li>)}

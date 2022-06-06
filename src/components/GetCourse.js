@@ -8,7 +8,7 @@ function GetCourse () {
             <div className="container-xl">
                 <h2>GetCourse</h2>
                 <div className="row skills">
-                <div className="col-sm-4 col-12">
+                <div className="col-md-4 col-12">
                         <ul>
                             <li>Настройка аккаунта, домена, почты</li>
                             <li>Создание и настройка тренингов и уроков</li>
@@ -16,7 +16,7 @@ function GetCourse () {
                             <li>Создание сайтов и рассылок</li>
                         </ul>
                     </div>
-                    <div className="col-sm-4 col-12">
+                    <div className="col-md-4 col-12">
                        <ul>
                         <li>Настройка промоакций и партнерских программ</li>
                         <li>Построение и тестирование процессов</li>
@@ -24,7 +24,7 @@ function GetCourse () {
                         <li>Настройка платежной системы</li>
                     </ul> 
                     </div>
-                    <div className="col-sm-4 col-12">
+                    <div className="col-md-4 col-12">
                         <ul>
                         <li>Создание продуктов и предложений</li>
                         <li>Аналитика (дашборды, статистика)</li>

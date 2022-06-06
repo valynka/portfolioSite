@@ -28,11 +28,14 @@ code {
 
 .avatar-img {
 	border-radius: 50%;
+	width: 100%;
+	display: block;
+	margin: 1.5rem auto;
+
 }
 
 section {
-	padding-top: 5rem;
-	padding-bottom: 5rem;
+	padding-top: 4rem;
 }
 
 h1, h2 {
@@ -87,6 +90,10 @@ h1, h2 {
 	color: #212529;
 }
 
+footer {
+	margin-top: 4rem;
+}
+
 footer .btn-link {
 	text-decoration: none;
 }
@@ -120,6 +127,7 @@ footer {
 }
 
 .about-me-text {
+	margin-top: 1.5rem;
 	padding-left: calc(var(--bs-gutter-x) * 4);
 }
 
@@ -158,4 +166,19 @@ footer {
 
 .btn-check:focus + .btn, .btn:focus {
 	box-shadow: none;
+}
+
+@media screen and (max-width: 768px) {
+	.avatar-img {		
+		width: 80%;		
+	}
+	.about-me-text {
+		padding-left: calc(var(--bs-gutter-x) * 0.5);
+	}
+	.gc-preview {
+		width:100%;
+	}
+	.about-me {
+		padding-top: 0;
+	}
 }
