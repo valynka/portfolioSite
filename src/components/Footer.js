@@ -12,7 +12,7 @@ function Footer () {
             <div className="container-xl">
                 <div className="d-sm-flex justify-content-between align-items-center">
                     <div className="contact">
-                        <p><i className="fas fa-home me-3"></i> Moscow, Russia</p>
+                        <p><i className="fas fa-home me-3"></i> Москва, Россия</p>
                         <p><i className="fas fa-envelope me-3"></i> <a href="mailto:valerie-kras@mail.ru">valerie-kras@mail.ru</a></p>
                         <p><i className="fas fa-phone me-3"></i> <a href="tel:+79250577959">+7 925 057 79 59</a></p>
                     </div>

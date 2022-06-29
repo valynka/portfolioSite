@@ -25,8 +25,8 @@ class App extends React.Component {
         <div>
           <Header webMenuHandler={this.webMenuHandler} webMenuShown={webMenuShown} />
           <AboutMe />
-          <GetCourse />
           <Frontend />
+          <GetCourse />
           <Photo />
           <Footer />
         </div>
