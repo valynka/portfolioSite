@@ -51,12 +51,12 @@ const portfolio = [
         alt: 'Список с сортировкой drag-and-drop',
         link: 'https://valynka.github.io/sortable-list/',
     },
-    {
+   /* {
         img: mathnet,
         desc: 'Редизайн и верстка портала Math-Net. Адаптив. Использован LESS. В работу до сих пор не взяли.',
         alt: 'Math-Net',
         link: 'https://valynka.github.io/mathnet.local/',
-    },
+    }*/,
 ];
 
 export default portfolio;
