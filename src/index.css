@@ -25,12 +25,8 @@ code {
 }
 
 section {
-<<<<<<< HEAD
-	padding-top: 4rem;
-=======
 	padding-top: 50px;
 	padding-bottom: 50px;
->>>>>>> parent of 7daf59f... GetCourse added
 }
 
 h1, h2 {
@@ -109,7 +105,6 @@ footer .btn-link {
 
 footer {
 	background: rgb(248 249 250);
-<<<<<<< HEAD
 	padding-top: 1rem;
 }
 
@@ -121,16 +116,6 @@ footer {
 .slider-img {
 	max-width: 80%;
 	margin: 0 auto;
-}
-
-.gc-preview {
-	display: block;
-	width:80%;
-	margin: 3rem auto;
-}
-
-.gc-preview:hover {
-	border: 1px solid #6c757d;
 }
 
 .education {
@@ -149,13 +134,11 @@ footer {
 
 .accordion-button:not(.collapsed)::after {
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-=======
+
 	padding-top: 15px;
->>>>>>> parent of 7daf59f... GetCourse added
 }
  
 
-<<<<<<< HEAD
 .btn-check:focus + .btn, .btn:focus {
 	box-shadow: none;
 }
@@ -167,12 +150,7 @@ footer {
 	.about-me-text {
 		padding-left: calc(var(--bs-gutter-x) * 0.5);
 	}
-	.gc-preview {
-		width:100%;
-	}
 	.about-me {
 		padding-top: 0;
 	}
 }
-=======
->>>>>>> parent of 7daf59f... GetCourse added
