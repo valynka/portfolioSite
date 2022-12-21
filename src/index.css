@@ -116,13 +116,9 @@ footer .btn-link {
 	background: rgb(248 249 250);
 }
 
-.contact a, .text-link {
+.contact a {
 	text-decoration: none;
 	color: #212529;
-}
-
-.contact a:hover, .text-link:hover {
-	color: #6C757D
 }
 
 footer {

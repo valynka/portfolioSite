@@ -22,10 +22,10 @@ function Header (props) {
 								<a className="nav-link" href="#about">Обо мне</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="#portfolio">Frontend-разработка</a>
+								<a className="nav-link" href="#getcourse">GetCourse</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="#getcourse">GetCourse</a>
+								<a className="nav-link" href="#portfolio">Frontend-разработка</a>
 							</li>
 							<li className="nav-item">
 								<a className="nav-link" href="#photo">Фотография</a>
