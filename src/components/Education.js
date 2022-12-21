@@ -27,7 +27,7 @@ class Education extends React.Component {
         });
 
         return (
-            <div className="accordion accordion-flush education">
+            <div className="accordion accordion-flush">
                 <div className="accordion-item">
                     <h2 className="accordion-header">
                     <button className={buttonClasses} onClick={this.collapsingHandler} type="button">

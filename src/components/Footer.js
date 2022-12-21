@@ -17,9 +17,9 @@ function Footer () {
                         <p><i className="fas fa-phone me-3"></i> <a href="tel:+79250577959">+7 925 057 79 59</a></p>
                     </div>
                     <div className="social">
-                        {/* <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/valinka_flipka/" target="_blank" rel="noopener noreferrer" role="button" data-mdb-ripple-color="dark">
+                        <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/valinka_flipka/" target="_blank" rel="noopener noreferrer" role="button" data-mdb-ripple-color="dark">
                             <i className="fab fa-instagram"></i>
-                        </a> */}
+                        </a>
                         <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/valynka" target="_blank" rel="noopener noreferrer" role="button" data-mdb-ripple-color="dark">
                             <i className="fab fa-github"></i>
                         </a>
