@@ -1,0 +1,6 @@
+$theme-colors: map-merge(
+    $theme-colors,
+    (
+        "custom": $teal-200,
+    )  
+);

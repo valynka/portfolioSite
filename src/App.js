@@ -27,7 +27,7 @@ class App extends React.Component {
   render () {
     const { webDevMenuShown } = this.state.uiState;
     return (
-        <div onClick={this.closeDropDownHandler}>
+        <div className='bg-dark text-light' onClick={this.closeDropDownHandler}>
           <Header dropDownHandler={this.dropDownHandler} webDevMenuShown={webDevMenuShown} />
           <AboutMe />
           <Skills />
