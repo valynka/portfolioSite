@@ -18,5 +18,9 @@ $utilities: map-merge(
 			map-get($utilities, "color"),
 			( state: hover ),
 		),
+        "width": map-merge(
+			map-get($utilities, "width"),
+			( responsive: true ),
+		),
     )    
 );

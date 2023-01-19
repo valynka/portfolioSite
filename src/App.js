@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Photo from './components/Photo';
 import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
+import Citation from './components/Citation';
 
 class App extends React.Component {
   state = {
@@ -27,8 +28,9 @@ class App extends React.Component {
   render () {
     const { webDevMenuShown } = this.state.uiState;
     return (
-        <div className='bg-dark text-light' onClick={this.closeDropDownHandler}>
+        <div className='bg-dark text-light h-100' onClick={this.closeDropDownHandler}>
           <Header dropDownHandler={this.dropDownHandler} webDevMenuShown={webDevMenuShown} />
+          <Citation />
           <AboutMe />
           <Skills />
           <Portfolio />

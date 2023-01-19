@@ -4,3 +4,12 @@ $theme-colors: map-merge(
         "custom": $teal-200,
     )  
 );
+
+$display-font-sizes: map-merge(
+    $display-font-sizes,
+    (
+        7: 7rem,
+    )  
+);
+
+$font-family-serif: "Times New Roman", Times, serif;

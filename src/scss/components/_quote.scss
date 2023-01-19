@@ -1,0 +1,44 @@
+.citation {
+    min-height: 90vh;
+}
+
+.quote {
+    position: relative;
+  
+    display: block;
+  
+    margin: 0;
+    padding: map.get($spacers, 5) map.get($spacers, 4) map.get($spacers, 3);
+  
+    color: $blockquote-footer-color;
+    font-size: map.get($font-sizes, 2);
+  
+    border-radius: $border-radius;
+    @include box-shadow($box-shadow);
+
+    @include media-breakpoint-up(md) {
+        & {
+            font-size: map.get($display-font-sizes, 5);
+        }
+      }
+  
+    &::before {
+      position: absolute;
+      top: -#{map.get($spacers, 5)};
+  
+      font-size: map.get($display-font-sizes, 7);
+      font-family: $font-family-serif;
+  
+      content: '“';
+    }
+  
+    & > &-footer {
+      margin: $spacer 0 0;
+      padding-top: map.get($spacers, 2);
+  
+      font-size: $blockquote-footer-font-size;
+      font-style: italic;
+  
+      border-top: 1px solid;
+    }
+}
