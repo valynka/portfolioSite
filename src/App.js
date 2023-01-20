@@ -10,26 +10,22 @@ import Citation from './components/Citation';
 class App extends React.Component {
   state = {
 		uiState: {
-			webDevMenuShown: false,
+			webMenuShown: false,
 		},
 	};
 
-  dropDownHandler = (e) => {
+  webMenuHandler = (e) => {
     e.preventDefault();
-		const { webDevMenuShown } = this.state.uiState;
-		this.setState({uiState: {webDevMenuShown: !webDevMenuShown}});
+		const { webMenuShown } = this.state.uiState;
+		this.setState({uiState: {webMenuShown: !webMenuShown}});
 	}
 
-  closeDropDownHandler = () => {
-    const { webDevMenuShown } = this.state.uiState;
-    if (webDevMenuShown) this.setState({uiState: {webDevMenuShown: !webDevMenuShown}});
-  }
-
   render () {
-    const { webDevMenuShown } = this.state.uiState;
+    const { dropdownOpened } = this.state.uiState;
+    const { webMenuShown } = this.state.uiState;
     return (
         <div className='bg-dark text-light h-100' onClick={this.closeDropDownHandler}>
-          <Header dropDownHandler={this.dropDownHandler} webDevMenuShown={webDevMenuShown} />
+          <Header webMenuHandler={this.webMenuHandler} webMenuShown={webMenuShown} />
           <Citation />
           <AboutMe />
           <Skills />

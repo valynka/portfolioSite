@@ -3,34 +3,29 @@ import cn from 'classnames';
 import logo from "../img/icons/logo.svg";
 
 function Header (props) {	
-	const { webDevMenuShown } = props;
-	const { dropDownHandler } = props;
+	const { webMenuShown } = props;
+	const { webMenuHandler } = props;
 
-	const dropDownItemStyle = cn('nav-item', 'dropdown', {
-		'show': webDevMenuShown,
-	});
-	const dropDownListStyle = cn('dropdown-menu', {
-		'show': webDevMenuShown,
+	const navbarStyles = cn('collapse', 'navbar-collapse', 'justify-content-center', {
+		'show': webMenuShown,
 	});
 
 	return (
 		<header className='shadow mb-5'>
 			<div className="container-xl">
-				<nav className="navbar navbar-expand-lg pt-0 pb-0">					
+				<nav className="navbar navbar-dark navbar-expand-lg pt-0 pb-0">					
 					<a className="navbar-brand" href="/"><img className='header-logo text-custom-hover' src={logo} alt='valinka logo'/></a>
-					<div className="collapse navbar-collapse justify-content-center">
+					<button className="navbar-toggler" type="button" onClick={webMenuHandler}><span className="navbar-toggler-icon"></span></button>
+					<div className={navbarStyles}>
 						<ul className="navbar-nav">
 							<li className="nav-item">
 								<a className="nav-link text-light text-custom-hover fs-5" href="#about">Обо мне</a>
 							</li>
-							<li className={dropDownItemStyle}>
-								<a className="nav-link text-light text-custom-hover fs-5 dropdown-toggle" href="#!" onClick={dropDownHandler}>
-									Веб-разработка
-								</a>
-								<ul className={dropDownListStyle}>
-									<li><a className="dropdown-item" href="#skills">Навыки и образование</a></li>
-									<li><a className="dropdown-item" href="#portfolio">Портфолио</a></li>
-								</ul>
+							<li className="nav-item">
+								<a className="nav-link text-light text-custom-hover fs-5" href="#about">Портфолио</a>
+							</li>
+							<li className="nav-item">
+								<a className="nav-link text-light text-custom-hover fs-5" href="#about">Навыки и образование</a>
 							</li>
 							<li className="nav-item">
 								<a className="nav-link text-light text-custom-hover fs-5" href="#photo">Фотография</a>
