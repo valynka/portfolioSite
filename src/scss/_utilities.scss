@@ -20,7 +20,12 @@ $utilities: map-merge(
 		),
         "width": map-merge(
 			map-get($utilities, "width"),
-			( responsive: true ),
+			( responsive: true,
+                values: map-merge(
+                    map-get(map-get($utilities, "width"), "values"),
+                    (80: 80%),
+                )
+            )
 		),
     )    
 );

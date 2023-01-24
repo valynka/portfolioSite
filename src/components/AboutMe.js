@@ -3,18 +3,21 @@ import avatar from "../img/avatar.jpg";
 
 function AboutMe () {
     return (
-        <section className="about-me" id="about">
-            <div className="container-xl">
-                <div className="row align-items-center">
-                    <div className="col-sm-8 col-12">
-                            <h1>Привет!</h1>
-                            <p>Меня зовут Валерия. Я занимаюсь frontend-разработкой, люблю фотографировать и обожаю собак.</p>
-                            <p>До того, как прийти в веб я много лет работала редактором, но захотела научиться чему-то еще. Выбор пал сначала на верстку, позже заинтересовал backend. Пробовала учить PHP, был небольшой опыт разработки на Bitrix. Потом прошла короткий курс по SEO, но в итоге больше всего понравились JavaScript и frontend.</p>
-                            <p>В 2019 году моя жизнь кардинально изменилась, в ней появился лучший друг по имени Флип. Это чудесный пес породы корги. С тех пор помимо программирования я учусь еще и зоопсихологии. Как ни странно, но это положительно влияет не только на отношения с животными, но и с людьми. Флип научил меня глубже понимать себя и окружающих, быть терпеливее и лучше.</p>
-                            <p>Ниже на этой странице можно посмотреть примеры работ и фотографии, среди которых, конечно же, можно увидеть и Флипкины.</p>
+        <section className="about-me " id="about">
+            <div className="container-xl">            
+                <div className="row">
+                    <div className="col-md-8 col-12 ps-md-6 pe-md-6">
+                        <h1 className='mb-4 ls-25'>Привет!</h1>
+                            <p>Меня зовут <b>Валерия Красных</b>. Я занимаюсь <b>html-версткой</b> и <b>frontend-разработкой</b>.</p>
+                            <p>По образованию я редактор, а еще увлекаюсь фотографией и кинологией.</p>
+                            <p>Ниже есть примеры сверстанных мной страниц и небольших компонентов, написанных на JavaScript</p>
+                            <p>Свой сайт я создала, используя <b>React</b> и <b>Bootstrap</b>. Код есть на <a href="https://github.com/valynka/portfolioSite" className="link-custom text-decoration-none">GitHub</a>.</p>
+                            <p>И, конечно, не могла не выложить здесь фотогалерею, в которой целый альбом посвящен моему корги по имени Флип.</p>
                     </div>
-                    <div className="col-sm-4 col-12">
-                        <img className="avatar-img w-100" src={avatar} alt="avatar" />
+                    <div className="col-md-4 col-12 d-flex justify-content-center justify-content-md-start align-items-start">
+                        <div className="avatar-img w-75 w-sm-50 w-md-80 mt-5 mt-md-0">
+                            <img className="w-100 rounded-1" src={avatar} alt="avatar" />
+                        </div>                        
                     </div>
                 </div>
             </div>

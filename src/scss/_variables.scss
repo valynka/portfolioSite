@@ -12,4 +12,11 @@ $display-font-sizes: map-merge(
     )  
 );
 
+$spacers: map-merge(
+    $spacers,
+    (
+        6: $spacer * 4,
+    )
+);
+
 $font-family-serif: "Times New Roman", Times, serif;
