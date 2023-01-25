@@ -11,7 +11,7 @@ function Header (props) {
 	});
 
 	return (
-		<header className='shadow mb-5'>
+		<header className='shadow position-absolute top-0 start-0 end-0'>
 			<div className="container-xl">
 				<nav className="navbar navbar-dark navbar-expand-lg pt-0 pb-0">					
 					<a className="navbar-brand" href="/"><img className='header-logo text-custom-hover' src={logo} alt='valinka logo'/></a>

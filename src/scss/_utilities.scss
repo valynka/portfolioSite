@@ -1,4 +1,4 @@
-$utilities: map-merge(
+$utilities: map.merge(
     $utilities,
     (
         "letter-spacing": (
@@ -14,15 +14,15 @@ $utilities: map-merge(
             25: 0.25rem
         )
       ),
-      "color": map-merge(
+      "color": map.merge(
 			map-get($utilities, "color"),
 			( state: hover ),
 		),
-        "width": map-merge(
-			map-get($utilities, "width"),
+        "width": map.merge(
+			map.get($utilities, "width"),
 			( responsive: true,
-                values: map-merge(
-                    map-get(map-get($utilities, "width"), "values"),
+                values: map.merge(
+                    map.get(map.get($utilities, "width"), "values"),
                     (80: 80%),
                 )
             )

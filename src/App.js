@@ -21,15 +21,14 @@ class App extends React.Component {
 	}
 
   render () {
-    const { dropdownOpened } = this.state.uiState;
     const { webMenuShown } = this.state.uiState;
     return (
-        <div className='bg-dark text-light h-100' onClick={this.closeDropDownHandler}>
+        <div className='bg-dark text-light'>
           <Header webMenuHandler={this.webMenuHandler} webMenuShown={webMenuShown} />
           <Citation />
           <AboutMe />
-          <Skills />
           <Portfolio />
+          <Skills />
           <Photo />
           <Footer />
         </div>
