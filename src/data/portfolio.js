@@ -10,6 +10,7 @@ import musicBox1 from '../img/music-box1.jpg';
 import musicBox2 from '../img/music-box2.jpg';
 import chat from '../img/chat.jpg';
 import cognitiveDistortions from '../img/cognitive-distortions.jpg';
+import valinkaGC from '../img/valinka-gc.jpg';
 
 
 const portfolio = [
@@ -60,6 +61,12 @@ const portfolio = [
         desc: 'Готовила первоначальную верстку (изменилось не много) во время работы в &quot;Читай-город&quot;.',
         alt: 'Гоголь-Моголь',
         link: 'https://www.gogol-mogol.ru/',
+    },
+    {
+        img: valinkaGC,
+        desc: 'Мой личный сайт о работе на платформе GetCourse. <i>Pug</i>. <i>SCSS</i>. <i>Bootstrap</i>. <i>Gulp</i>. <i>CSS, JS анимации</i>. <b>Адаптив</b>.',
+        alt: 'Valinka GetCourse',
+        link: 'https://getcourse.valinka.ru/',
     },
     {
         img: sortableTable,

@@ -1,0 +1,58 @@
+.tools-container {
+    @media (max-width: 768px){
+        height: 250px;
+        margin-top: 150px;
+    }    
+}
+
+.tool-img {
+    position: absolute;
+}
+
+.pug-img {
+    width: 100px;
+    top: 160px;
+    left: 25%;
+}
+
+.html-img {
+    width: 80px;
+    top: -100px;
+    left: calc(50% - 40px);
+}
+
+.css-img {
+    width: 80px;
+    top: -50px;
+    left: calc(25% - 40px);
+}
+
+.js-img {
+    width: 80px;
+    top: -50px;
+    left: calc(75% - 40px);
+}
+
+.react-img {
+    width: 100px;
+    top: 40px;
+    left: calc(50% - 50px);
+}
+
+.sass-img {
+    width: 100px;
+    top: 80px;
+    left: calc(25% - 50px);
+}
+
+.bootstrap-img {
+    width: 100px;
+    top: 90px;
+    left: calc(75% - 50px);
+}
+
+.gulp-img {
+    width: 100px;
+    top: 100px;
+    left: 45%;
+}

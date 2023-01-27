@@ -8,10 +8,10 @@ function GalleryNav (props) {
     const { changeTypeHandler } = props;
 
     return (
-        <ul className="nav nav-tabs gallery-tabs">
+        <ul className="nav nav-tabs gallery-tabs mb-4">
             {tabs.map(({ tabId, name }) => {
-                const classes = cn('nav-link', {
-                    'active': tabId === type,
+                const classes = cn('nav-link', 'text-custom-hover', {
+                    'active': tabId === type,                    
                 });
                 return (
                 <li className="nav-item" key={_.uniqueId()}>

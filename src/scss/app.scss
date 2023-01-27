@@ -1,5 +1,6 @@
 @use "sass:map";
 @import "./node_modules/bootstrap/scss/functions";
+@import "color-vars";
 @import "./node_modules/bootstrap/scss/variables";
 @import "variables";
 @import "./node_modules/bootstrap/scss/maps";
@@ -10,3 +11,5 @@
 @import "components/quote";
 @import "components/about";
 @import "components/portfolio-item";
+@import "components/tools";
+@import "components/courses";
