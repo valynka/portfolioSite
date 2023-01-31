@@ -1,23 +1,22 @@
 $theme-colors: map-merge(
-    $theme-colors,
-    (
-        "custom": $teal-200,
-    )  
+  $theme-colors,
+  (
+    "custom": $teal-200,
+  )
 );
 
 $display-font-sizes: map-merge(
-    $display-font-sizes,
-    (
-        7: 7rem,
-    )  
+  $display-font-sizes,
+  (
+    7: 7rem,
+  )
 );
 
 $spacers: map-merge(
-    $spacers,
-    (
-        6: $spacer * 4,
-    )
+  $spacers,
+  (
+    6: $spacer * 4,
+  )
 );
 
 $font-family-serif: "Times New Roman", Times, serif;
-

@@ -1,38 +1,37 @@
 .courses {
+  display: grid;
+  margin-bottom: 0;
+  padding-left: 0;
 
-	display: grid;
-	margin-bottom: 0;
-	padding-left: 0;
+  list-style-type: none;
 
-	list-style-type: none;
+  @media (min-width: 768px) {
+    grid-auto-flow: column;
+    grid-column-gap: map.get($spacers, 4);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-	@media (min-width: 768px) {        
-		grid-column-gap: map.get($spacers, 4);
-		grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-auto-flow: column;
-	}
+  li {
+    margin-bottom: map.get($spacers, 3);
 
-	li {
-		margin-bottom: map.get($spacers, 3);
+    &::before {
+      margin-right: map.get($spacers, 2);
 
-		&::before {
-			margin-right: map.get($spacers, 2);
+      font-family: FontAwesome, sans-serif;
 
-			font-family: FontAwesome, sans-serif;
+      content: "\f19d";
+    }
 
-			content: "\f19d";
-		}
+    p {
+      margin: 0;
+      padding-left: map.get($spacers, 4);
 
-		p {
-			margin: 0;
-			padding-left: map.get($spacers, 4);
+      font-size: map.get($font-sizes, 6);
 
-			font-size: map.get($font-sizes, 6);
-
-			&.period {
-				font-size: $font-size-sm;
-			}
-		}       
-	}
+      &.period {
+        font-size: $font-size-sm;
+      }
+    }
+  }
 }

@@ -1,58 +1,66 @@
 .tools-container {
-    @media (max-width: 768px){
-        height: 250px;
-        margin-top: 150px;
-    }    
+  @media (max-width: 768px) {
+    height: 250px;
+    margin-top: 150px;
+  }
 }
 
 .tool-img {
-    position: absolute;
+  position: absolute;
 }
 
 .pug-img {
-    width: 100px;
-    top: 160px;
-    left: 25%;
+  top: 160px;
+  left: 25%;
+
+  width: 100px;
 }
 
 .html-img {
-    width: 80px;
-    top: -100px;
-    left: calc(50% - 40px);
+  top: -100px;
+  left: calc(50% - 40px);
+
+  width: 80px;
 }
 
 .css-img {
-    width: 80px;
-    top: -50px;
-    left: calc(25% - 40px);
+  top: -50px;
+  left: calc(25% - 40px);
+
+  width: 80px;
 }
 
 .js-img {
-    width: 80px;
-    top: -50px;
-    left: calc(75% - 40px);
+  top: -50px;
+  left: calc(75% - 40px);
+
+  width: 80px;
 }
 
 .react-img {
-    width: 100px;
-    top: 40px;
-    left: calc(50% - 50px);
+  top: 40px;
+  left: calc(50% - 50px);
+
+  width: 100px;
 }
 
 .sass-img {
-    width: 100px;
-    top: 80px;
-    left: calc(25% - 50px);
+  top: 80px;
+  left: calc(25% - 50px);
+
+  width: 100px;
 }
 
 .bootstrap-img {
-    width: 100px;
-    top: 90px;
-    left: calc(75% - 50px);
+  top: 90px;
+  left: calc(75% - 50px);
+
+  width: 100px;
 }
 
 .gulp-img {
-    width: 100px;
-    top: 100px;
-    left: 45%;
+  top: 100px;
+  left: 45%;
+
+  width: 100px;
 }

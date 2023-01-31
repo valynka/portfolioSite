@@ -5,7 +5,7 @@ import "@fancyapps/ui/dist/fancybox.css";
 
 function Fancybox(props) {
   const delegate = props.delegate || "[data-fancybox]";
-  
+
   useEffect(() => {
     const opts = props.options || {};
 
