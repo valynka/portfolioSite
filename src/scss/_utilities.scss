@@ -2,30 +2,42 @@ $utilities: map.merge(
     $utilities,
     (
         "letter-spacing": (
-        rfs: true,
-        responsive: true,
-        property: letter-spacing,
-        class: ls,
-        values: (
-            1: 1rem,
-            2: 2rem,
-            3: 3rem,
-            4: 0.4rem,
-            25: 0.25rem
-        )
+            rfs: true,
+            responsive: true,
+            property: letter-spacing,
+            class: ls,
+            values: (
+                1: 1rem,
+                2: 2rem,
+                3: 3rem,
+                4: 0.4rem,
+                25: 0.25rem
+            )
       ),
-      "color": map.merge(
-			map-get($utilities, "color"),
-			( state: hover ),
-		),
+        "z-index": (
+            responsive: true,
+            property: z-index,
+            class: z-index,
+            values: (
+                0: 0,
+                1: 1,
+                2: 2,
+                3: 3,
+                100: 100
+            )
+        ),
+        "color": map.merge(
+            map-get($utilities, "color"),
+            ( state: hover ),
+        ),
         "width": map.merge(
-			map.get($utilities, "width"),
-			( responsive: true,
+            map.get($utilities, "width"),
+            ( responsive: true,
                 values: map.merge(
                     map.get(map.get($utilities, "width"), "values"),
                     (80: 80%),
                 )
             )
-		),
+        ),
     )    
 );

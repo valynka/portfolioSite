@@ -11,10 +11,16 @@
     padding: map.get($spacers, 5) map.get($spacers, 4) map.get($spacers, 3);
   
     color: $blockquote-footer-color;
-    font-size: map.get($font-sizes, 2);
+    font-size: map.get($font-sizes, 3);
   
     border-radius: $border-radius;
     @include box-shadow($box-shadow);
+
+    @include media-breakpoint-up(sm) {
+      & {
+          font-size: map.get($font-sizes, 2);
+      }
+    }
 
     @include media-breakpoint-up(md) {
         & {

@@ -17,15 +17,15 @@ function Header (props) {
 					<a className="navbar-brand" href="/"><img className='header-logo text-custom-hover' src={logo} alt='valinka logo'/></a>
 					<button className="navbar-toggler" type="button" onClick={webMenuHandler}><span className="navbar-toggler-icon"></span></button>
 					<div className={navbarStyles}>
-						<ul className="navbar-nav">
+						<ul className="navbar-nav bg-dark sticky-top">
 							<li className="nav-item">
 								<a className="nav-link text-light text-custom-hover fs-5" href="#about">Обо мне</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link text-light text-custom-hover fs-5" href="#about">Портфолио</a>
+								<a className="nav-link text-light text-custom-hover fs-5" href="#portfolio">Портфолио</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link text-light text-custom-hover fs-5" href="#about">Навыки и образование</a>
+								<a className="nav-link text-light text-custom-hover fs-5" href="#skills">Навыки и образование</a>
 							</li>
 							<li className="nav-item">
 								<a className="nav-link text-light text-custom-hover fs-5" href="#photo">Фотография</a>

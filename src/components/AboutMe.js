@@ -3,14 +3,14 @@ import avatar from "../img/avatar.jpg";
 
 function AboutMe () {
     return (
-        <section className="pb-6" id="about">
+        <section className="pb-md-6" id="about">
             <div className="container-xl">            
                 <div className="row pb-4">
                     <div className="col-md-8 col-12 ps-md-6 pe-md-6">
-                        <h1 className='mb-4 ls-25 h2'>Привет!</h1>
+                        <h1 className='mb-3 mb-md-4 ls-25 h2'>Привет!</h1>
                             <p>Меня зовут <b>Валерия Красных</b>. Я занимаюсь <b>html-версткой</b> и <b>frontend-разработкой</b>.</p>
                             <p>По образованию я редактор, а еще увлекаюсь фотографией и кинологией.</p>
-                            <p>Ниже есть примеры сверстанных мной страниц и небольших компонентов, написанных на JavaScript</p>
+                            <p>Ниже есть примеры сверстанных мной страниц и небольших компонентов, написанных на JavaScript.</p>
                             <p>Свой сайт я создала, используя <b>React</b> и <b>Bootstrap</b>. Код есть на <a href="https://github.com/valynka/portfolioSite" className="link-custom text-decoration-none">GitHub</a>.</p>
                             <p>И, конечно, не могла не выложить здесь фотогалерею, в которой целый альбом посвящен моему корги по имени Флип.</p>
                     </div>

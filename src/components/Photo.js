@@ -27,7 +27,7 @@ class Photo extends React.Component {
         return (
             <section className="pt-6 pb-6" id="photo">
 		        <div className="container-xl">
-			        <h2 className='mb-5 ls-25 h1'>Фотография</h2>
+			        <h2 className='mb-4 mb-md-5 ls-25 h1'>Фотография</h2>
                     <GalleryNav type={chosenType} tabs={tabs} changeTypeHandler={this.changeTypeHandler} />
                     <GalleryContent type={chosenType} tabContent={tabContent} />
                 </div>

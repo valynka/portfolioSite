@@ -11,9 +11,9 @@ import react from '../img/tools/react.png';
 
 function Skills () {
     return (
-        <section className="mt-6 pt-6 pb-6" id="skills">
+        <section className="pt-6 pb-md-6" id="skills">
             <div className="container-xl">
-                <h2 className='mb-5 ls-25 h1'>Навыки и образование</h2>
+                <h2 className='mb-4 mb-md-5 ls-25 h1'>Навыки и образование</h2>
                 <div className="row mb-4">
                     <div className='col-12 col-md-6'>
                         <p>Создаю красивые и удобные для пользователя страницы. Придерживаюсь принципов кроссбраузерности, валидности и хорошей архитектуры кода.</p>

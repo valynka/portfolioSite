@@ -5,9 +5,9 @@ import _ from 'lodash';
 
 function Portfolio () {
     return (
-        <section className="mt-6 pt-6 pb-6" id="portfolio">
+        <section className="pt-6 pb-md-6" id="portfolio">
 		    <div className="container-xl">
-			    <h2 className='mb-5 ls-25 h1'>Портфолио</h2>
+			    <h2 className='mb-4 mb-md-5 ls-25 h1'>Портфолио</h2>
 			    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
                     {portfolio.map((item) => <PortfolioItem key={_.uniqueId()} data={item }/>)}
                 </div>
