@@ -1,6 +1,7 @@
 extends:
   - stylelint-config-standard-scss
   - stylelint-config-rational-order
+  - stylelint-config-prettier
 
 plugins:
   - stylelint-scss
@@ -14,5 +15,5 @@ rules:
   at-rule-no-unknown: null
   scss/no-global-function-names: null
   scss/at-rule-no-unknown: true
-  indentation: "tab"
+  indentation: 2
   no-descending-specificity: null

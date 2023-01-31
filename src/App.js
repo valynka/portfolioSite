@@ -28,11 +28,13 @@ class App extends React.Component {
           webMenuHandler={this.webMenuHandler}
           webMenuShown={webMenuShown}
         />
-        <Citation />
-        <AboutMe />
-        <Portfolio />
-        <Skills />
-        <Photo />
+        <main>
+          <Citation />
+          <AboutMe />
+          <Portfolio />
+          <Skills />
+          <Photo />
+        </main>
         <Footer />
       </div>
     );
