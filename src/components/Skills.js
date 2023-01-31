@@ -32,10 +32,10 @@ function Skills () {
                         <img className='tool-img react-img' src={react} alt='React' />
                     </div>                
                 </div>
-                <div className='row mt-4'>
+                <div className='row mt-6'>
                     <div className='col'>
-                        <p>По первому образованию я редактор. В 2009 году закончила Московский Государсвенный Университет Печати, факультет издательского дела и журналистики.</p>
-                        <p>Потом училась на различных <b>курсах</b>:</p>
+                        <p><b className='h5 ls-25'>Высшее образование</b> &ndash; МГУ&nbsp;Печати, факультет издательского дела и журналистики, 2009.</p>
+                        <p><b className='h5 ls-25'>Курсы</b>:</p>
                         <ul className='courses'>
                             {educationList.map((course) =>
                                 <li><span className='fs-5'>{course.institution}</span>
