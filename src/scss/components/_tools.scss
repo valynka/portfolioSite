@@ -11,7 +11,7 @@
 
 .pug-img {
   top: 160px;
-  left: 25%;
+  left: 15%;
 
   width: 100px;
 }
@@ -25,42 +25,42 @@
 
 .css-img {
   top: -50px;
-  left: calc(25% - 40px);
+  left: calc(10% - 40px);
 
   width: 80px;
 }
 
 .js-img {
   top: -50px;
-  left: calc(75% - 40px);
+  left: calc(85% - 40px);
 
   width: 80px;
 }
 
 .react-img {
   top: 40px;
-  left: calc(50% - 50px);
+  left: calc(40% - 50px);
 
   width: 100px;
 }
 
 .sass-img {
   top: 80px;
-  left: calc(25% - 50px);
+  left: 0;
 
   width: 100px;
 }
 
 .bootstrap-img {
   top: 90px;
-  left: calc(75% - 50px);
+  left: calc(55% - 50px);
 
   width: 100px;
 }
 
 .gulp-img {
   top: 100px;
-  left: 45%;
+  left: 70%;
 
   width: 100px;
 }
