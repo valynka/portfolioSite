@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import cn from "classnames";
 import logo from "../img/icons/logo.svg";
 
-function Header(props) {
-  const { webMenuShown } = props;
-  const { webMenuHandler } = props;
+function Header() {
+  const [webMenuShown, setWebmenuShown] = useState(false);
 
   const navbarStyles = cn(
     "collapse",
@@ -29,7 +28,7 @@ function Header(props) {
           <button
             className="navbar-toggler"
             type="button"
-            onClick={webMenuHandler}
+            onClick={() => setWebmenuShown(!webMenuShown)}
           >
             <span className="navbar-toggler-icon"></span>
           </button>

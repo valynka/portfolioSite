@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import AboutMe from "./components/AboutMe";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -7,38 +7,37 @@ import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
 import Citation from "./components/Citation";
 
-class App extends React.Component {
-  state = {
-    uiState: {
-      webMenuShown: false,
-    },
-  };
+function App() {
+  const [scrollTop, setScrollTop] = useState(0);
 
-  webMenuHandler = (e) => {
-    e.preventDefault();
-    const { webMenuShown } = this.state.uiState;
-    this.setState({ uiState: { webMenuShown: !webMenuShown } });
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollTop(window.scrollY);
+    };
 
-  render() {
-    const { webMenuShown } = this.state.uiState;
-    return (
-      <div className="bg-dark text-light">
-        <Header
-          webMenuHandler={this.webMenuHandler}
-          webMenuShown={webMenuShown}
-        />
-        <main>
-          <Citation />
-          <AboutMe />
-          <Portfolio />
-          <Skills />
-          <Photo />
-        </main>
-        <Footer />
-      </div>
-    );
-  }
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+    
+
+  }, []);
+
+  return (
+    <div className="bg-dark text-light">
+      <div className="position-fixed">{scrollTop}</div>
+      <Header />
+      <main>
+        <Citation />
+        <AboutMe />
+        <Portfolio />
+        <Skills />
+        <Photo />
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
