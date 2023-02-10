@@ -60,7 +60,7 @@ class Photo extends React.Component {
         className="pt-6 pb-6"
         id="photo"
       >
-        <div className="container-xl">
+        <div className="container-xl overflow-hidden">
           <motion.h2
             variants={headerAnimation}
             className="mb-4 mb-md-5 ls-25 h1"

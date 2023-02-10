@@ -42,7 +42,7 @@ function Portfolio() {
       className="pt-6 pb-md-6"
       id="portfolio"
     >
-      <div className="container-xl">
+      <div className="container-xl overflow-hidden">
         <motion.h2 variants={textAnimation} className="mb-4 mb-md-5 ls-25 h1">
           Портфолио
         </motion.h2>

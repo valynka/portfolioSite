@@ -9,9 +9,6 @@ const GalleryNav = forwardRef(({ type, tabs, changeTypeHandler }, ref) => (
       const classes = cn("nav-link", "text-custom-hover", {
         active: tabId === type,
       });
-      {
-        console.log(type, tabId);
-      }
       return (
         <li className="nav-item" key={_.uniqueId()}>
           <motion.button

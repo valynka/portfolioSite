@@ -9,7 +9,7 @@ import Citation from "./components/Citation";
 
 function App() {
   return (
-    <div className="bg-dark text-light">
+    <div className="bg-dark text-light overflow-hidden">
       <Header />
       <main>
         <Citation />
