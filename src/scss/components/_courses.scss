@@ -7,21 +7,17 @@
 
   @media (min-width: 768px) {
     grid-auto-flow: column;
-    grid-column-gap: map.get($spacers, 4);
+    grid-column-gap: map.get($spacers, 5);
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
   }
 
   li {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: map.get($spacers, 3);
-
-    &::before {
-      margin-right: map.get($spacers, 2);
-
-      font-family: FontAwesome, sans-serif;
-
-      content: "\f19d";
-    }
+    padding-right: map.get($spacers, 3);
+    padding-left: map.get($spacers, 3);
 
     p {
       margin: 0;
@@ -31,6 +27,18 @@
 
       &.period {
         font-size: $font-size-sm;
+      }
+
+      &.institution {
+        padding-left: 0;
+
+        &::before {
+          margin-right: map.get($spacers, 2);
+
+          font-family: FontAwesome, sans-serif;
+
+          content: "\f19d";
+        }
       }
     }
   }

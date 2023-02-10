@@ -1,8 +1,31 @@
+import { motion } from "framer-motion";
 import React from "react";
-import GalleryNav from "./GalleryNav";
+import { MGalleryNav } from "./GalleryNav";
 import GalleryContent from "./GalleryContent";
 import galleryLandscape from "../data/galleryLandscape";
 import galleryFlip from "../data/galleryFlip";
+
+const headerAnimation = {
+  hidden: {
+    x: "-100%",
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: { type: "tween", duration: 0.8 },
+  },
+};
+
+const navAnimation = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: { delay: 0.4, duration: 0.2 },
+  },
+};
 
 class Photo extends React.Component {
   state = {
@@ -30,17 +53,29 @@ class Photo extends React.Component {
     const { tabs } = this.state.data;
     const { tabContent } = this.state.data;
     return (
-      <section className="pt-6 pb-6" id="photo">
+      <motion.section
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ amount: 0.2, once: true }}
+        className="pt-6 pb-6"
+        id="photo"
+      >
         <div className="container-xl">
-          <h2 className="mb-4 mb-md-5 ls-25 h1">Фотография</h2>
-          <GalleryNav
+          <motion.h2
+            variants={headerAnimation}
+            className="mb-4 mb-md-5 ls-25 h1"
+          >
+            Фотография
+          </motion.h2>
+          <MGalleryNav
+            variants={navAnimation}
             type={chosenType}
             tabs={tabs}
             changeTypeHandler={this.changeTypeHandler}
           />
           <GalleryContent type={chosenType} tabContent={tabContent} />
         </div>
-      </section>
+      </motion.section>
     );
   }
 }

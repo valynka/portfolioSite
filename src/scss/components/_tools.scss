@@ -11,9 +11,9 @@
 
 .pug-img {
   top: 160px;
-  left: 15%;
+  left: 10%;
 
-  width: 100px;
+  width: 150px;
 }
 
 .html-img {
@@ -39,28 +39,28 @@
 
 .react-img {
   top: 40px;
-  left: calc(40% - 50px);
+  left: calc(25% - 50px);
 
-  width: 100px;
+  width: 150px;
 }
 
 .sass-img {
-  top: 80px;
-  left: 0;
+  top: 75px;
+  left: calc(60% - 50px);;
 
   width: 100px;
 }
 
 .bootstrap-img {
-  top: 90px;
+  top: 150px;
   left: calc(55% - 50px);
 
-  width: 100px;
+  width: 150px;
 }
 
 .gulp-img {
   top: 100px;
-  left: 70%;
+  left: 80%;
 
   width: 100px;
 }
