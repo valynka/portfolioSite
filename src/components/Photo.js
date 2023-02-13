@@ -13,7 +13,7 @@ const headerAnimation = {
   visible: {
     x: 0,
     opacity: 1,
-    transition: { type: "tween", duration: 0.8 },
+    transition: { type: "tween", duration: 0.8, velosity: 10 },
   },
 };
 
@@ -23,7 +23,7 @@ const navAnimation = {
   },
   visible: {
     opacity: 1,
-    transition: { delay: 0.4, duration: 0.2 },
+    transition: { delay: 0.6, duration: 0.2 },
   },
 };
 
@@ -56,7 +56,7 @@ class Photo extends React.Component {
       <motion.section
         initial="hidden"
         whileInView="visible"
-        viewport={{ amount: 0.2, once: true }}
+        viewport={{ amount: 0.1, once: true }}
         className="pt-6 pb-6"
         id="photo"
       >

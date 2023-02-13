@@ -13,10 +13,10 @@ const animation = {
     y: 0,
     opacity: 1,
     transition: {
-      delay: custom * 0.1,
       type: "spring",
+      delay: custom * 0.1,
+      duration: 0.5,
       bounce: 0,
-      velosity: 100,
     },
   }),
 };
@@ -27,7 +27,7 @@ function GalleryContent(props) {
 
   return (
     <div className="tab-content">
-      {tabContent.map(({ tabId, content }) => {
+      {tabContent.map(({ tabId, content }, index) => {
         const classes = cn("tab-pane", "fade", {
           show: tabId === type,
           active: tabId === type,
@@ -38,7 +38,7 @@ function GalleryContent(props) {
             <div className="row gallery">
               <Fancybox options={{ infinite: false }}>
                 {content.map(
-                  ({ fullImg800, fullImg1920, preview800, alt }, index) => {
+                  ({ fullImg800, fullImg1920, preview800, alt }, i) => {
                     return (
                       <motion.div
                         initial="hidden"
@@ -54,13 +54,8 @@ function GalleryContent(props) {
                           data-fancybox={`gallery-${index}`}
                         >
                           <motion.img
-                            custom={index + 1}
+                            custom={i + 1}
                             variants={animation}
-                            transition={{
-                              type: "tween",
-                              delay: 0.1,
-                              duration: 0.5,
-                            }}
                             className="img-fluid"
                             src={preview800}
                             alt={alt}
