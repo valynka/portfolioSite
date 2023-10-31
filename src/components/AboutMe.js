@@ -60,6 +60,8 @@ function AboutMe() {
               <a
                 href="https://github.com/valynka/portfolioSite"
                 className="link-custom text-decoration-none"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 GitHub
               </a>
@@ -72,7 +74,7 @@ function AboutMe() {
           </motion.div>
           <motion.div
             variants={photoAnimation}
-            className="col-md-4 col-12 d-flex justify-content-center justify-content-md-start align-items-start overflow-hidden"
+            className="col-md-4 col-12 d-flex justify-content-center justify-content-md-start align-items-start"
           >
             <div className="avatar-img w-75 w-sm-50 w-md-80 w-lg-75 mt-5 mt-md-0">
               <img className="w-100 rounded-1" src={avatar} alt="avatar" />

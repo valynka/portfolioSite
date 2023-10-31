@@ -9,7 +9,7 @@ function Footer() {
         <div className="d-flex flex-column flex-md-row justify-content-between align-items-center border-top pt-3 pt-md-0">
           <div className="d-flex flex-column flex-md-row gap-3 gap-md-5 align-items-center">
             <p className="mb-0">
-              <i className="fa fa-home me-1"></i>Moscow, Russia
+              <i className="fa fa-home me-1"></i>Москва, Россия
             </p>
             <p className="mb-0">
               <i className="fa fa-envelope me-1"></i>{" "}
