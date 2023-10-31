@@ -39,7 +39,7 @@ function AboutMe() {
         <div className="row pb-4">
           <motion.div
             variants={textAnimation}
-            className="col-md-8 col-12 ps-md-6 pe-md-6 overflow-hidden"
+            className="col-md-8 col-12 ps-md-6 pe-md-6 overflow-hidden order-lg-2"
           >
             <h1 className="mb-3 mb-md-4 ls-25 h2">Привет!</h1>
             <p>
@@ -74,7 +74,7 @@ function AboutMe() {
           </motion.div>
           <motion.div
             variants={photoAnimation}
-            className="col-md-4 col-12 d-flex justify-content-center justify-content-md-start align-items-start"
+            className="col-md-4 col-12 d-flex justify-content-center justify-content-md-start align-items-start order-lg-1"
           >
             <div className="avatar-img w-75 w-sm-50 w-md-80 w-lg-75 mt-5 mt-md-0">
               <img className="w-100 rounded-1" src={avatar} alt="avatar" />
