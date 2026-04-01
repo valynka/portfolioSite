@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/portfolioSite/static/css/main.b93d754e.css",
+    "main.js": "/portfolioSite/static/js/main.0e2985b5.js",
+    "static/media/avatar.jpg": "/portfolioSite/static/media/avatar.487f31a6df60099073d1.jpg",
+    "static/media/music-box1.jpg": "/portfolioSite/static/media/music-box1.8429380254c66e518496.jpg",
+    "static/media/site.jpg": "/portfolioSite/static/media/site.85bec1e83095a87f1c3a.jpg",
+    "static/media/concomitant.jpg": "/portfolioSite/static/media/concomitant.8a86cbe5c754461b27ae.jpg",
+    "static/media/gogol-mogol.jpg": "/portfolioSite/static/media/gogol-mogol.20e86ce4fc9883f0c795.jpg",
+    "static/media/medical.jpg": "/portfolioSite/static/media/medical.685d64d940e65c6c3bf8.jpg",
+    "static/media/cognitive-distortions.jpg": "/portfolioSite/static/media/cognitive-distortions.78e22787c68ae54767d2.jpg",
+    "static/media/music-box2.jpg": "/portfolioSite/static/media/music-box2.48be78e5511e05409474.jpg",
+    "static/media/chat.jpg": "/portfolioSite/static/media/chat.3888125d54d20963278e.jpg",
+    "static/media/react.png": "/portfolioSite/static/media/react.d8f055a81038f7500a09.png",
+    "static/media/html.png": "/portfolioSite/static/media/html.28c04110fcb9505b115f.png",
+    "static/media/sortable-table.jpg": "/portfolioSite/static/media/sortable-table.39539b1cd44df11af190.jpg",
+    "static/media/pug.png": "/portfolioSite/static/media/pug.5da21deda4e5b2faf46e.png",
+    "static/media/css.png": "/portfolioSite/static/media/css.3ce31bcfc999438b44ed.png",
+    "static/media/js.png": "/portfolioSite/static/media/js.7e020527f3c3943f9add.png",
+    "static/media/sass.png": "/portfolioSite/static/media/sass.9a1401c958ed4a870a13.png",
+    "static/media/sortable-list.jpg": "/portfolioSite/static/media/sortable-list.ed1ab9d3554a9de60e24.jpg",
+    "static/media/logo.svg": "/portfolioSite/static/media/logo.326ae47d66113330a5f17f9c37528cbf.svg",
+    "static/media/hexlet-green.svg": "/portfolioSite/static/media/hexlet-green.41cbb2d1778a968e6ae4.svg",
+    "index.html": "/portfolioSite/index.html",
+    "main.b93d754e.css.map": "/portfolioSite/static/css/main.b93d754e.css.map",
+    "main.0e2985b5.js.map": "/portfolioSite/static/js/main.0e2985b5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b93d754e.css",
+    "static/js/main.0e2985b5.js"
+  ]
+}
