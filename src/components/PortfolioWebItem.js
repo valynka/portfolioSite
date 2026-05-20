@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import React, { forwardRef } from "react";
 
-const PortfolioItem = forwardRef(({ img, desc, alt, link }, ref) => (
-  <div className="col portfolio-item" ref={ref}>
+const PortfolioWebItem = forwardRef(({ img, desc, alt, link }, ref) => (
+  <div className="col web-portfolio-item" ref={ref}>
     <a
       className="card-link text-dark text-decoration-none"
       href={link}
@@ -22,8 +22,8 @@ const PortfolioItem = forwardRef(({ img, desc, alt, link }, ref) => (
   </div>
 ));
 
-PortfolioItem.displayName = "PortfolioItem";
+PortfolioWebItem.displayName = "PortfolioWebItem";
 
-export const MPortfolioItem = motion(PortfolioItem);
+export const MPortfolioWebItem = motion(PortfolioWebItem);
 
-export default PortfolioItem;
+export default PortfolioWebItem;

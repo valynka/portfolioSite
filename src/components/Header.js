@@ -1,5 +1,5 @@
 import React, { useState, useEffect, forwardRef } from "react";
-import logo from "../img/icons/logo.svg";
+//import logo from "../img/icons/logo.svg";
 import { motion, AnimatePresence } from "framer-motion";
 
 const links = [
@@ -25,6 +25,8 @@ const headerAnimation = {
     },
   }),
 };
+
+const surname = "Красных";
 
 function Header() {
   const [webMenuShown, setWebmenuShown] = useState(false);
@@ -59,11 +61,14 @@ function Header() {
             className="navbar-brand"
             href="/"
           >
-            <img
-              className="header-logo text-custom-hover"
-              src={logo}
-              alt="valinka logo"
-            />
+            <div className="text-uppercase header-logo text-custom">
+              <div className="name">Валерия</div>
+              <div className="surname">
+                {surname.split("").map((char, index) => (
+                  <span key={index}>{char}</span>
+                ))}
+              </div>
+            </div>
           </motion.a>
           <AnimatePresence>
             {webVersion ? (
