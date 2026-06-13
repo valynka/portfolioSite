@@ -33,12 +33,12 @@ function Footer() {
           <div className="social">
             <a
               className="btn btn-link btn-floating btn-lg m-1 text-custom"
-              href="https://www.instagram.com/valinka_flipka/"
+              href="https://www.instagram.com/lerabyflip/"
               target="_blank"
               rel="noopener noreferrer"
               role="button"
             >
-              <i className="fa fa-instagram"></i>
+              <i className="fa-brands fa-instagram"></i>
             </a>
             <a
               className="btn btn-link btn-floating btn-lg m-1 text-custom"
@@ -47,16 +47,17 @@ function Footer() {
               rel="noopener noreferrer"
               role="button"
             >
-              <i className="fa fa-github"></i>
+              <i className="fa-brands fa-github"></i>
             </a>
             <a
-              className="btn btn-link btn-floating btn-lg m-1 text-custom"
-              href="https://ru.hexlet.io/u/valinka"
+              className="btn btn-link btn-floating btn-lg m-1 text-custom text-decoration-none"
+              href="portfolioSite/resume.html"
               target="_blank"
               rel="noopener noreferrer"
               role="button"
             >
-              <i className="hexlet"></i>
+              <i className="fa fa-file-arrow-down"></i>
+              <span className="fs-6 ms-2">Резюме</span>
             </a>
           </div>
         </div>

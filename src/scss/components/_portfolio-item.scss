@@ -1,11 +1,19 @@
+.dogs-container {
+  background: #24262d;
+  border-radius: 4px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
 .web-portfolio-item {
   .card-link {
     .card {
       position: relative;
-
+      background: transparent;
       border: none;
 
-      &::after {
+      &::before {
         position: absolute;
         top: 0;
         left: 0;
@@ -13,9 +21,9 @@
         width: 100%;
         height: 100%;
 
-        background: map.get($theme-colors, "dark");
+        background: #353b42;
         border-radius: $card-border-radius;
-        opacity: 0.4;
+        opacity: 0.2;
 
         transition: all 0.8s ease 0s;
 
@@ -23,96 +31,148 @@
       }
 
       &-body {
-        min-height: 100px;
-      }
-    }
-
-    &:hover .card::after {
-      opacity: 0;
-    }
-  }
-}
-
-.article-portfolio-item {
-  .card-link {
-    .card {
-      background: #37393a;
-
-      position: relative;
-      display: flex;
-      flex-direction: column;
-
-      .card-title {
-        color: #ebecec;
-        transition: color 0.35s ease, text-shadow 0.35s ease;
+        background-color: #fff;
+        border-bottom-left-radius: $card-border-radius;
+        border-bottom-right-radius: $card-border-radius;
+        margin-top: -1px;
       }
 
-      .text-custom {
-        transition: text-shadow 0.35s ease;
-      }
-      .card-img {
-        flex: 3 1 auto;
-        display: flex;
-        align-content: center;
-      }
-      .card-img-top {
-        display: block;
-        transform: translateZ(0);
-        transition: transform 0.45s ease, filter 0.45s ease;
-        height: auto;
-        object-fit: contain;
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        border-radius: inherit;
-
-        background: radial-gradient(
-          circle at top center,
-          rgba(166, 233, 213, 0.14),
-          transparent 60%
-        );
-
-        opacity: 0;
-        transition: opacity 0.35s ease;
-
-        pointer-events: none;
-      }
       &::after {
         content: "";
         position: absolute;
         inset: 0;
         border-radius: inherit;
 
-        box-shadow: inset 0 0 0 1px rgba(166, 233, 213, 0.35),
+        box-shadow: 0 0 0 1px rgba(166, 233, 213, 0.35),
           0 0 12px rgba(166, 233, 213, 0.18), 0 0 24px rgba(166, 233, 213, 0.1),
-          inset 0 0 12px rgba(166, 233, 213, 0.08);
+          0 0 12px rgba(166, 233, 213, 0.08);
 
         opacity: 0;
         transition: opacity 0.35s ease;
 
         pointer-events: none;
       }
+
       &:hover {
         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35),
           0 0 30px rgba(166, 233, 213, 0.08);
       }
 
-      &:hover::before,
       &:hover::after {
         opacity: 1;
       }
 
-      &:hover .card-title {
-        text-shadow: 0 0 10px rgba(166, 233, 213, 0.08);
+      &:hover::before {
+        opacity: 0;
       }
 
-      &:hover .text-custom {
-        text-shadow: 0 0 8px rgba(166, 233, 213, 0.45),
-          0 0 18px rgba(166, 233, 213, 0.25);
+      &-body {
+        min-height: 100px;
       }
     }
+  }
+}
+
+.article-portfolio-item {
+  .card {
+    background: #37393a;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    border: none;
+
+    .card-title {
+      color: #ebecec;
+      transition: color 0.35s ease, text-shadow 0.35s ease;
+    }
+
+    .text-custom {
+      transition: text-shadow 0.35s ease;
+    }
+    .article-card-img {
+      flex: 3 1 auto;
+      display: flex;
+      align-content: center;
+    }
+    .card-img-top {
+      display: block;
+      transform: translateZ(0);
+      transition: transform 0.45s ease, filter 0.45s ease;
+      height: auto;
+      object-fit: contain;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+
+      background: radial-gradient(
+        circle at top center,
+        rgba(166, 233, 213, 0.14),
+        transparent 60%
+      );
+
+      opacity: 0;
+      transition: opacity 0.35s ease;
+
+      pointer-events: none;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+
+      box-shadow: inset 0 0 0 1px rgba(166, 233, 213, 0.35),
+        0 0 12px rgba(166, 233, 213, 0.18), 0 0 24px rgba(166, 233, 213, 0.1),
+        inset 0 0 12px rgba(166, 233, 213, 0.08);
+
+      opacity: 0;
+      transition: opacity 0.35s ease;
+
+      pointer-events: none;
+    }
+    &:hover {
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35),
+        0 0 30px rgba(166, 233, 213, 0.08);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      opacity: 1;
+    }
+
+    &:hover .card-title {
+      text-shadow: 0 0 10px rgba(166, 233, 213, 0.08);
+    }
+    &:hover .card-title.title-shadow {
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9), 0 4px 16px rgba(0, 0, 0, 0.7);
+    }
+
+    &:hover .text-custom {
+      text-shadow: 0 0 8px rgba(166, 233, 213, 0.45),
+        0 0 18px rgba(166, 233, 213, 0.25);
+    }
+  }
+
+  .title-shadow {
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9), 0 4px 16px rgba(0, 0, 0, 0.7);
+  }
+}
+
+.f-html {
+  border-radius: 5px;
+  background: rgba(33, 37, 41, 0.96) !important;
+  width: 60%;
+  color: #cbd5e1 !important;
+  padding-bottom: 5rem !important;
+  max-width: 80ch;
+
+  @media (max-width: 992px) {
+    width: 95%;
   }
 }

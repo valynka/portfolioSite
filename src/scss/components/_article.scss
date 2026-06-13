@@ -1,0 +1,128 @@
+.article {
+  font-family: Arial, sans-serif;
+  line-height: 1.75;
+
+  h1,
+  h2,
+  h3 {
+    color: #f8fafc;
+  }
+
+  p {
+    margin: 0 0 18px;
+  }
+
+  section {
+    margin-top: 42px;
+  }
+
+  ul {
+    margin: 20px 0;
+    padding-left: 22px;
+  }
+
+  li {
+    margin-bottom: 14px;
+  }
+
+  strong {
+    color: #f8fafc;
+    font-weight: 600;
+  }
+
+  em {
+    color: #e2e8f0;
+  }
+
+  .lead {
+    font-size: 18px;
+    color: #e2e8f0;
+  }
+
+  .note {
+    margin: 28px 0;
+    padding: 18px 20px;
+    border-left: 3px solid #38bdf8;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 10px;
+  }
+
+  .strategy-box {
+    margin-top: 24px;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+  }
+
+  .result {
+    margin-top: 22px;
+    padding: 16px 18px;
+    background: rgba(34, 197, 94, 0.08);
+    border-left: 3px solid #22c55e;
+    border-radius: 10px;
+  }
+
+  .example {
+    margin-top: 18px;
+    padding: 18px;
+    background: rgba(59, 130, 246, 0.08);
+    border-radius: 10px;
+  }
+
+  .checklist {
+    margin-top: 28px;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 14px;
+  }
+
+  .summary {
+    margin-top: 56px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .intro {
+    font-size: 18px;
+    color: #e2e8f0;
+  }
+
+  .highlight {
+    margin: 28px 0 10px;
+    padding: 18px 20px;
+    background: rgba(56, 189, 248, 0.08);
+    border-left: 3px solid #38bdf8;
+    border-radius: 12px;
+  }
+
+  .feature {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding: 16px 18px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+  }
+
+  .conclusion {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    color: #e2e8f0;
+  }
+
+  @media (max-width: 768px) {
+    section {
+      margin-top: 32px;
+    }
+
+    .intro {
+      font-size: 17px;
+    }
+
+    .strategy-box,
+    .checklist {
+      padding: 18px;
+    }
+  }
+}
