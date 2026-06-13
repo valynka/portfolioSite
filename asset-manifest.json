@@ -1,32 +1,34 @@
 {
   "files": {
-    "main.css": "/portfolioSite/static/css/main.b93d754e.css",
-    "main.js": "/portfolioSite/static/js/main.5fbd6dfe.js",
-    "static/media/avatar.jpg": "/portfolioSite/static/media/avatar.487f31a6df60099073d1.jpg",
+    "main.css": "/portfolioSite/static/css/main.0f53f296.css",
+    "main.js": "/portfolioSite/static/js/main.19806ef3.js",
+    "static/media/countrylife.png": "/portfolioSite/static/media/countrylife.baa88a095bad72e79ab1.png",
+    "static/media/avatar-2025.jpg": "/portfolioSite/static/media/avatar-2025.e64459aa464fba45d07f.jpg",
+    "static/media/thermos.jpg": "/portfolioSite/static/media/thermos.884c273acc0e1eecec8a.jpg",
+    "static/media/brisket.jpg": "/portfolioSite/static/media/brisket.18741a7d4f115b5063bf.jpg",
+    "static/media/shaping.jpg": "/portfolioSite/static/media/shaping.cfd0fe6797ce74ebc581.jpg",
+    "static/media/procedure.jpg": "/portfolioSite/static/media/procedure.2600498aadf6637d1e43.jpg",
+    "static/media/toy.jpg": "/portfolioSite/static/media/toy.33520f497050c6b461ae.jpg",
+    "static/media/candle-set.jpg": "/portfolioSite/static/media/candle-set.ba911bf38c76c5f40e7d.jpg",
+    "static/media/marketplace.png": "/portfolioSite/static/media/marketplace.c1915e17814b2597d50c.png",
+    "static/media/glass.jpg": "/portfolioSite/static/media/glass.f162ee2f7412ad3d6cc3.jpg",
+    "static/media/ideal.jpg": "/portfolioSite/static/media/ideal.b53070ca46ad06346852.jpg",
+    "static/media/thermos-cup.jpg": "/portfolioSite/static/media/thermos-cup.4d29dba79666efd70299.jpg",
+    "static/media/noise-cancellation.png": "/portfolioSite/static/media/noise-cancellation.f5c4eb88f26883f4a000.png",
+    "static/media/candles.jpg": "/portfolioSite/static/media/candles.1192f141a12f42f18f33.jpg",
+    "static/media/whale.jpg": "/portfolioSite/static/media/whale.a7bbc6b6725bdba70b85.jpg",
     "static/media/music-box1.jpg": "/portfolioSite/static/media/music-box1.8429380254c66e518496.jpg",
-    "static/media/site.jpg": "/portfolioSite/static/media/site.85bec1e83095a87f1c3a.jpg",
-    "static/media/concomitant.jpg": "/portfolioSite/static/media/concomitant.8a86cbe5c754461b27ae.jpg",
-    "static/media/gogol-mogol.jpg": "/portfolioSite/static/media/gogol-mogol.20e86ce4fc9883f0c795.jpg",
     "static/media/medical.jpg": "/portfolioSite/static/media/medical.685d64d940e65c6c3bf8.jpg",
-    "static/media/cognitive-distortions.jpg": "/portfolioSite/static/media/cognitive-distortions.78e22787c68ae54767d2.jpg",
     "static/media/music-box2.jpg": "/portfolioSite/static/media/music-box2.48be78e5511e05409474.jpg",
     "static/media/chat.jpg": "/portfolioSite/static/media/chat.3888125d54d20963278e.jpg",
-    "static/media/react.png": "/portfolioSite/static/media/react.d8f055a81038f7500a09.png",
-    "static/media/html.png": "/portfolioSite/static/media/html.28c04110fcb9505b115f.png",
     "static/media/sortable-table.jpg": "/portfolioSite/static/media/sortable-table.39539b1cd44df11af190.jpg",
-    "static/media/pug.png": "/portfolioSite/static/media/pug.5da21deda4e5b2faf46e.png",
-    "static/media/css.png": "/portfolioSite/static/media/css.3ce31bcfc999438b44ed.png",
-    "static/media/js.png": "/portfolioSite/static/media/js.7e020527f3c3943f9add.png",
-    "static/media/sass.png": "/portfolioSite/static/media/sass.9a1401c958ed4a870a13.png",
-    "static/media/sortable-list.jpg": "/portfolioSite/static/media/sortable-list.ed1ab9d3554a9de60e24.jpg",
-    "static/media/logo.svg": "/portfolioSite/static/media/logo.326ae47d66113330a5f17f9c37528cbf.svg",
     "static/media/hexlet-green.svg": "/portfolioSite/static/media/hexlet-green.41cbb2d1778a968e6ae4.svg",
     "index.html": "/portfolioSite/index.html",
-    "main.b93d754e.css.map": "/portfolioSite/static/css/main.b93d754e.css.map",
-    "main.5fbd6dfe.js.map": "/portfolioSite/static/js/main.5fbd6dfe.js.map"
+    "main.0f53f296.css.map": "/portfolioSite/static/css/main.0f53f296.css.map",
+    "main.19806ef3.js.map": "/portfolioSite/static/js/main.19806ef3.js.map"
   },
   "entrypoints": [
-    "static/css/main.b93d754e.css",
-    "static/js/main.5fbd6dfe.js"
+    "static/css/main.0f53f296.css",
+    "static/js/main.19806ef3.js"
   ]
 }

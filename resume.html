@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>Резюме - Валерия Красных, Контент-менеджер</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #eef2f5;
+        font-family: "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+        line-height: 1.45;
+        color: #1e2a3a;
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center;
+      }
+
+      /* Контейнер для печати — размер A4 */
+      .resume {
+        max-width: 1100px;
+        width: 100%;
+        background-color: #ffffff;
+        border-radius: 24px;
+        box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: all 0.2s;
+      }
+
+      /* ДВУХКОЛОНОЧНАЯ СТРУКТУРА */
+      .resume-inner {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      /* ЛЕВАЯ КОЛОНКА (тёмная, акцентная) */
+      .sidebar {
+        background-color: #0f2b3d;
+        color: #e0edf5;
+        width: 33%;
+        padding: 2rem 1.8rem;
+        flex-shrink: 0;
+      }
+
+      /* ПРАВАЯ КОЛОНКА (светлая) */
+      .main-content {
+        background-color: #ffffff;
+        width: 67%;
+        padding: 2rem 2.2rem;
+        flex-shrink: 0;
+      }
+
+      /* ФОТО */
+      .photo {
+        text-align: center;
+        margin-bottom: 1.8rem;
+      }
+      .photo img {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #ffffffcc;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+        background-color: #fff;
+        object-position: 50% 20%;
+      }
+
+      /* Заголовки в левой колонке */
+      .sidebar h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #ffb347;
+        margin: 1.5rem 0 0.8rem 0;
+        border-bottom: 2px solid #ffb34760;
+        display: inline-block;
+        padding-bottom: 4px;
+      }
+      .sidebar h3:first-of-type {
+        margin-top: 0;
+      }
+
+      /* Контакты */
+      .contact-item {
+        margin-bottom: 0.7rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.85rem;
+        line-height: 1.4;
+        word-break: break-word;
+      }
+      .contact-icon {
+        font-weight: 600;
+        min-width: 28px;
+        font-size: 1rem;
+      }
+      .contact-item a {
+        color: #ffd966;
+        text-decoration: none;
+      }
+      .contact-item a:hover {
+        text-decoration: underline;
+      }
+
+      /* Навыки, языки */
+      .skill-item {
+        margin-bottom: 0.6rem;
+        font-size: 0.85rem;
+        line-height: 1.4;
+      }
+      .skill-name {
+        font-weight: 600;
+        display: inline-block;
+        color: #ffd966;
+      }
+      .lang-item {
+        margin: 0.5rem 0;
+        font-size: 0.85rem;
+      }
+
+      /* Обо мне / хобби */
+      .about-text {
+        font-size: 0.85rem;
+        line-height: 1.5;
+        margin-top: 0.5rem;
+        text-align: justify;
+      }
+
+      /* ПРАВАЯ КОЛОНКА: заголовки */
+      .main-content h2 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #0f2b3d;
+        margin-bottom: 0.25rem;
+      }
+      .main-content .job-title {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #ff8c42;
+        margin-bottom: 0.5rem;
+        border-left: 4px solid #ff8c42;
+        padding-left: 12px;
+      }
+      .main-content .section-title {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #0f2b3d;
+        margin: 1.4rem 0 0.8rem 0;
+        border-bottom: 3px solid #ffb347;
+        display: inline-block;
+        padding-bottom: 4px;
+      }
+      .main-content .section-title:first-of-type {
+        margin-top: 0;
+      }
+
+      /* Опыт работы */
+      .job {
+        margin-bottom: 1.5rem;
+      }
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: baseline;
+        margin-bottom: 0.3rem;
+      }
+      .job-company {
+        font-weight: 700;
+        font-size: 1rem;
+        color: #0f2b3d;
+      }
+      .job-date {
+        font-size: 0.75rem;
+        color: #5a6e7c;
+        background: #eef2f5;
+        padding: 2px 8px;
+        border-radius: 20px;
+      }
+      .job-position {
+        font-weight: 600;
+        color: #ff8c42;
+        font-size: 0.9rem;
+        margin-bottom: 0.4rem;
+      }
+      .job-desc {
+        font-size: 0.85rem;
+        color: #2c3e44;
+        padding-left: 0.8rem;
+        border-left: 2px solid #ffb34780;
+        margin-top: 6px;
+      }
+      .job-desc ul {
+        margin-left: 1.2rem;
+        margin-top: 0.2rem;
+      }
+      .job-desc li {
+        margin-bottom: 0.3rem;
+      }
+
+      /* Образование */
+      .edu-item {
+        margin-bottom: 1rem;
+      }
+      .edu-degree {
+        font-weight: 700;
+        font-size: 0.9rem;
+      }
+      .edu-place {
+        font-size: 0.85rem;
+        color: #2c3e44;
+      }
+      .course-item {
+        font-size: 0.85rem;
+        margin-bottom: 0.4rem;
+      }
+
+      /* Доп. инфа */
+      .extra-info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 0.5rem;
+        font-size: 0.85rem;
+      }
+
+      /* Для печати */
+      @media print {
+        body {
+          background: white;
+          padding: 0;
+          margin: 0;
+        }
+        .resume {
+          max-width: 100%;
+          border-radius: 0;
+          box-shadow: none;
+        }
+        .sidebar {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+        .job-date {
+          background: #eef2f5;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+        .contact-item a {
+          text-decoration: none;
+          color: #ffd966;
+        }
+        .photo img {
+          border: 2px solid #ddd;
+        }
+      }
+
+      /* адаптив */
+      @media (max-width: 750px) {
+        .sidebar,
+        .main-content {
+          width: 100%;
+        }
+        .resume-inner {
+          flex-direction: column;
+        }
+        body {
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="resume">
+      <div class="resume-inner">
+        <!-- ЛЕВАЯ КОЛОНКА (тёмная) -->
+        <div class="sidebar">
+          <div class="photo">
+            <!-- ФОТО с Google Drive (прямая ссылка с преобразованием) -->
+            <img
+              src="https://drive.google.com/thumbnail?id=1-PZskblDPMbZBdjcloaeudQPOMBvWyZo&sz=w400"
+              alt="Валерия Красных"
+              onerror="
+                this.src = 'https://via.placeholder.com/160?text=Valeria'
+              "
+            />
+          </div>
+
+          <h3>КОНТАКТЫ</h3>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span> +7 (925) 057-79-59
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <a href="mailto:valerie-kras@mail.ru">valerie-kras@mail.ru</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span> Москва, готова к удалённой
+            работе
+          </div>
+
+          <h3>НАВЫКИ</h3>
+
+          <div class="skill-item">
+            <span class="skill-name">CMS / платформы:</span> 1С-Битрикс,
+            WordPress, MODX, OnePlatform
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Редактура и копирайтинг:</span> фактчекинг,
+            инфостиль, LSI-копирайтинг
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">HTML5 / CSS3:</span> продвинутый уровень,
+            вёрстка сложных элементов
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">JavaScript:</span> базовый, написание
+            скриптов для интерфейсов
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Adobe Photoshop:</span> обработка
+            изображений
+          </div>
+
+          <h3>ЯЗЫКИ</h3>
+          <div class="lang-item">🇷🇺 Русский — родной</div>
+          <div class="lang-item">🇬🇧 Английский — B2 (средне-продвинутый)</div>
+
+          <h3>О СЕБЕ / ХОББИ</h3>
+          <div class="about-text">
+            Внимательна к деталям, ценю логику и структуру. Увлекаюсь
+            зоопсихологией, прошла множество курсов по работе с собаками. Также
+            увлекаюсь фотографией, что помогает создавать эстетичный контент.
+          </div>
+        </div>
+
+        <!-- ПРАВАЯ КОЛОНКА (основная информация) -->
+        <div class="main-content">
+          <h2>Валерия Красных</h2>
+          <div class="job-title">Контент-менеджер / Редактор</div>
+          <p style="font-size: 0.9rem; margin-top: 8px; color: #3a5a6e">
+            Женщина, 38 лет, опыт в управлении контентом и веб-разработке —
+            более 11 лет
+          </p>
+
+          <!-- Желаемая должность -->
+          <div class="section-title">Желаемая позиция</div>
+          <div
+            style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 8px"
+          >
+            <span
+              style="
+                background: #f0f4f8;
+                padding: 4px 12px;
+                border-radius: 20px;
+              "
+              >🎯 Контент-менеджер / Редактор</span
+            >
+            <span
+              style="
+                background: #f0f4f8;
+                padding: 4px 12px;
+                border-radius: 20px;
+              "
+              >💼 Полная занятость, удалённо</span
+            >
+          </div>
+
+          <!-- ОПЫТ РАБОТЫ (акцент на сильные стороны + рекомендательное письмо) -->
+          <div class="section-title">Опыт работы</div>
+
+          <div class="job">
+            <div class="job-header">
+              <span class="job-company">UDP Auto (IT / разработка ПО)</span>
+              <span class="job-date">Апрель 2024 — Май 2025</span>
+            </div>
+            <div class="job-position">Контент-менеджер</div>
+            <div class="job-desc">
+              <ul>
+                <li>
+                  Разработка веб-проектов для автобизнеса на платформе
+                  OnePlatform: сборка сайтов, создание уникальных решений.
+                </li>
+                <li>
+                  Вёрстка кастомных элементов на HTML/CSS, написание скриптов на
+                  JS для специфичных задач.
+                </li>
+                <li>
+                  Управление контентом: поиск и оптимизация медиа,
+                  структурирование страниц.
+                </li>
+                <li>
+                  Документирование процессов в BPMN, вычитка технической
+                  документации.
+                </li>
+                <li>
+                  <strong>Рекомендательное письмо:</strong> отмечена способность
+                  быстро осваивать технологии, высокий уровень ответственности и
+                  внимание к деталям.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <span class="job-company">ГК Oasis</span>
+              <span class="job-date">Август 2023 — Март 2024</span>
+            </div>
+            <div class="job-position">Контент-менеджер</div>
+            <div class="job-desc">
+              <ul>
+                <li>
+                  Описание товаров для сайта, работа в админке: добавление
+                  товаров, баннеры, загрузка макетов.
+                </li>
+                <li>
+                  Обработка фотографий, вёрстка статей и описаний на
+                  HTML/CSS/JS.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <span class="job-company">ПрофЭкспертРесурс</span>
+              <span class="job-date">Ноябрь 2018 — Май 2019</span>
+            </div>
+            <div class="job-position">SEO-специалист</div>
+            <div class="job-desc">
+              <ul>
+                <li>
+                  Наполнение сайта в MODX, составление семантического ядра,
+                  перелинковка.
+                </li>
+                <li>Поиск копирайтеров, подготовка плана статей.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <span class="job-company"
+                >Сеть магазинов «Читай-город»</span
+              >
+              <span class="job-date">Июль 2018 — Октябрь 2018</span>
+            </div>
+            <div class="job-position">Веб-мастер</div>
+            <div class="job-desc">
+              <ul>
+                <li>
+                  Вёрстка лендинга, email-рассылок, статей. Работа в CMS
+                  1С-Битрикс (баннеры, акции, купоны).
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <span class="job-company">Математический институт РАН</span>
+              <span class="job-date">Июнь 2016 — Август 2017</span>
+            </div>
+            <div class="job-position">Специалист IT-отдела</div>
+            <div class="job-desc">
+              <ul>
+                <li>
+                  Создание дизайна и вёрстки mathnet.ru, работа с БД сайтов,
+                  контент.
+                </li>
+                <li>Фотосъёмка мероприятий, ведение YouTube-каналов.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <span class="job-company"
+                >МЦФЭР-Консалтинг (услуги для бизнеса)</span
+              >
+              <span class="job-date">Март 2011 — Ноябрь 2015</span>
+            </div>
+            <div class="job-position">Редактор-эксперт</div>
+            <div class="job-desc">
+              <ul>
+                <li>
+                  Ведение электронной системы «Госзаказ», подготовка контента
+                  для журнала «Госзаказ в вопросах и ответах».
+                </li>
+                <li>Участие в выставках, консультирование клиентов.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <span class="job-company">НЦПИ при Минюсте России</span>
+              <span class="job-date">Март 2010 — Март 2011</span>
+            </div>
+            <div class="job-position">Редактор правовой базы</div>
+            <div class="job-desc">Ведение базы данных «Эталон плюс».</div>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <span class="job-company">Издательский центр «Академия»</span>
+              <span class="job-date">Октябрь 2007 — Март 2009</span>
+            </div>
+            <div class="job-position">Младший редактор → Редактор</div>
+            <div class="job-desc">
+              Редактирование юридической литературы, ведение документооборота,
+              контроль внештатных сотрудников.
+            </div>
+          </div>
+
+          <!-- Образование и курсы -->
+          <div class="section-title">Образование</div>
+          <div class="edu-item">
+            <div class="edu-degree">
+              Высшее, Издательское дело и редактирование
+            </div>
+            <div class="edu-place">
+              Московский государственный университет печати им. И. Федорова
+              (2009)
+            </div>
+          </div>
+          <div class="section-title">Курсы повышения квалификации</div>
+          <div class="course-item">
+            ✅ Верстальщик (HTML5/CSS3) — Hexlet, 2022
+          </div>
+          <div class="course-item">✅ JavaScript — Hexlet, 2021</div>
+          <div class="course-item">
+            ✅ JavaScript/DOM/Интерфейсы — JavaScript.ru, 2020
+          </div>
+          <div class="course-item">✅ HTML5 и CSS3 — GeekBrains, 2020</div>
+          <div class="course-item">
+            ✅ Интернет-маркетинг / SEO — Центр «Специалист» при МГТУ им.
+            Баумана, 2018
+          </div>
+
+          <p
+            style="
+              font-size: 0.8rem;
+              margin-top: 20px;
+              border-top: 1px solid #e2e8f0;
+              padding-top: 12px;
+              color: #4a6272;
+            "
+          >
+            «Ценю логику и структуру, стремлюсь приносить реальную пользу
+            компании. Перфекционизм направляю в качество контента.»
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

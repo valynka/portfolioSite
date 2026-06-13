@@ -4,6 +4,8 @@
 	http://jedwatson.github.io/classnames
 */
 
+/*! License details at fancyapps.com/license */
+
 /**
  * @license
  * Lodash <https://lodash.com/>
