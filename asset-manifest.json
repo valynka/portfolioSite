@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolioSite/static/css/main.0f53f296.css",
-    "main.js": "/portfolioSite/static/js/main.19806ef3.js",
+    "main.css": "/portfolioSite/static/css/main.7b64c541.css",
+    "main.js": "/portfolioSite/static/js/main.60de6f9d.js",
     "static/media/countrylife.png": "/portfolioSite/static/media/countrylife.baa88a095bad72e79ab1.png",
     "static/media/avatar-2025.jpg": "/portfolioSite/static/media/avatar-2025.e64459aa464fba45d07f.jpg",
     "static/media/thermos.jpg": "/portfolioSite/static/media/thermos.884c273acc0e1eecec8a.jpg",
@@ -24,11 +24,11 @@
     "static/media/sortable-table.jpg": "/portfolioSite/static/media/sortable-table.39539b1cd44df11af190.jpg",
     "static/media/hexlet-green.svg": "/portfolioSite/static/media/hexlet-green.41cbb2d1778a968e6ae4.svg",
     "index.html": "/portfolioSite/index.html",
-    "main.0f53f296.css.map": "/portfolioSite/static/css/main.0f53f296.css.map",
-    "main.19806ef3.js.map": "/portfolioSite/static/js/main.19806ef3.js.map"
+    "main.7b64c541.css.map": "/portfolioSite/static/css/main.7b64c541.css.map",
+    "main.60de6f9d.js.map": "/portfolioSite/static/js/main.60de6f9d.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f53f296.css",
-    "static/js/main.19806ef3.js"
+    "static/css/main.7b64c541.css",
+    "static/js/main.60de6f9d.js"
   ]
 }
