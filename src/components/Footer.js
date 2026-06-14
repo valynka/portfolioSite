@@ -51,7 +51,7 @@ function Footer() {
             </a>
             <a
               className="btn btn-link btn-floating btn-lg m-1 text-custom text-decoration-none"
-              href="/portfolioSite/resume.html"
+              href="/portfolioSite/CV-Krasnykh.pdf"
               target="_blank"
               rel="noopener noreferrer"
               role="button"
