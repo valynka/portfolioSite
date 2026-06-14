@@ -51,7 +51,7 @@ function Footer() {
             </a>
             <a
               className="btn btn-link btn-floating btn-lg m-1 text-custom text-decoration-none"
-              href="portfolioSite/resume.html"
+              href="/portfolioSite/resume.html"
               target="_blank"
               rel="noopener noreferrer"
               role="button"
@@ -63,7 +63,7 @@ function Footer() {
         </div>
       </div>
       <div className="text-center bg-black bg-opacity-25 p-3 pb-4 text-custom">
-        © {year} Copyright: Valinka.ru
+        © {year}  Валерия Красных
       </div>
     </footer>
   );

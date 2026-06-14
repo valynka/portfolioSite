@@ -1,3 +1,9 @@
 .fancybox__carousel {
   padding-top: 20px;
 }
+
+.photo-gallery-fancybox .f-button.is-arrow {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}

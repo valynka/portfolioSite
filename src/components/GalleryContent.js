@@ -37,7 +37,11 @@ function GalleryContent(props) {
           <div className={classes} key={_.uniqueId()}>
             <div className="row gallery">
               <Fancybox
-                options={{ infinite: false }}
+                options={{
+                  infinite: false,
+
+                  mainClass: "photo-gallery-fancybox",
+                }}
               >
                 {content.map(
                   ({ fullImg800, fullImg1920, preview800, alt }, i) => {
