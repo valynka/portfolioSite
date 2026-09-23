@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolioSite/static/css/main.7b64c541.css",
-    "main.js": "/portfolioSite/static/js/main.2d0ebffe.js",
+    "main.js": "/portfolioSite/static/js/main.3e7ec169.js",
     "static/media/countrylife.png": "/portfolioSite/static/media/countrylife.baa88a095bad72e79ab1.png",
     "static/media/avatar-2025.jpg": "/portfolioSite/static/media/avatar-2025.e64459aa464fba45d07f.jpg",
     "static/media/thermos.jpg": "/portfolioSite/static/media/thermos.884c273acc0e1eecec8a.jpg",
@@ -11,6 +11,7 @@
     "static/media/toy.jpg": "/portfolioSite/static/media/toy.33520f497050c6b461ae.jpg",
     "static/media/candle-set.jpg": "/portfolioSite/static/media/candle-set.ba911bf38c76c5f40e7d.jpg",
     "static/media/marketplace.png": "/portfolioSite/static/media/marketplace.c1915e17814b2597d50c.png",
+    "static/media/iriska.jpg": "/portfolioSite/static/media/iriska.e99994d61781bfb7605f.jpg",
     "static/media/glass.jpg": "/portfolioSite/static/media/glass.f162ee2f7412ad3d6cc3.jpg",
     "static/media/ideal.jpg": "/portfolioSite/static/media/ideal.b53070ca46ad06346852.jpg",
     "static/media/thermos-cup.jpg": "/portfolioSite/static/media/thermos-cup.4d29dba79666efd70299.jpg",
@@ -25,10 +26,10 @@
     "index.html": "/portfolioSite/index.html",
     "static/media/hexlet-green.svg": "/portfolioSite/static/media/hexlet-green.41cbb2d1778a968e6ae4.svg",
     "main.7b64c541.css.map": "/portfolioSite/static/css/main.7b64c541.css.map",
-    "main.2d0ebffe.js.map": "/portfolioSite/static/js/main.2d0ebffe.js.map"
+    "main.3e7ec169.js.map": "/portfolioSite/static/js/main.3e7ec169.js.map"
   },
   "entrypoints": [
     "static/css/main.7b64c541.css",
-    "static/js/main.2d0ebffe.js"
+    "static/js/main.3e7ec169.js"
   ]
 }
