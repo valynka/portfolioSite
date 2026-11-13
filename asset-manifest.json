@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolioSite/static/css/main.7b64c541.css",
-    "main.js": "/portfolioSite/static/js/main.3e7ec169.js",
-    "static/media/countrylife.png": "/portfolioSite/static/media/countrylife.baa88a095bad72e79ab1.png",
+    "main.css": "/portfolioSite/static/css/main.bdaa055b.css",
+    "main.js": "/portfolioSite/static/js/main.c3df7a13.js",
+    "static/media/countrylife.png": "/portfolioSite/static/media/countrylife.07d569952b85e83d71b1.png",
+    "static/media/ai.png": "/portfolioSite/static/media/ai.0a38d926f983fa952d03.png",
     "static/media/avatar-2025.jpg": "/portfolioSite/static/media/avatar-2025.e64459aa464fba45d07f.jpg",
     "static/media/thermos.jpg": "/portfolioSite/static/media/thermos.884c273acc0e1eecec8a.jpg",
     "static/media/brisket.jpg": "/portfolioSite/static/media/brisket.18741a7d4f115b5063bf.jpg",
@@ -10,12 +11,11 @@
     "static/media/procedure.jpg": "/portfolioSite/static/media/procedure.2600498aadf6637d1e43.jpg",
     "static/media/toy.jpg": "/portfolioSite/static/media/toy.33520f497050c6b461ae.jpg",
     "static/media/candle-set.jpg": "/portfolioSite/static/media/candle-set.ba911bf38c76c5f40e7d.jpg",
-    "static/media/marketplace.png": "/portfolioSite/static/media/marketplace.c1915e17814b2597d50c.png",
     "static/media/iriska.jpg": "/portfolioSite/static/media/iriska.e99994d61781bfb7605f.jpg",
     "static/media/glass.jpg": "/portfolioSite/static/media/glass.f162ee2f7412ad3d6cc3.jpg",
     "static/media/ideal.jpg": "/portfolioSite/static/media/ideal.b53070ca46ad06346852.jpg",
+    "static/media/noise-cancellation.png": "/portfolioSite/static/media/noise-cancellation.2fd90599e3d4ee641aed.png",
     "static/media/thermos-cup.jpg": "/portfolioSite/static/media/thermos-cup.4d29dba79666efd70299.jpg",
-    "static/media/noise-cancellation.png": "/portfolioSite/static/media/noise-cancellation.f5c4eb88f26883f4a000.png",
     "static/media/candles.jpg": "/portfolioSite/static/media/candles.1192f141a12f42f18f33.jpg",
     "static/media/whale.jpg": "/portfolioSite/static/media/whale.a7bbc6b6725bdba70b85.jpg",
     "static/media/music-box1.jpg": "/portfolioSite/static/media/music-box1.8429380254c66e518496.jpg",
@@ -25,11 +25,11 @@
     "static/media/sortable-table.jpg": "/portfolioSite/static/media/sortable-table.39539b1cd44df11af190.jpg",
     "index.html": "/portfolioSite/index.html",
     "static/media/hexlet-green.svg": "/portfolioSite/static/media/hexlet-green.41cbb2d1778a968e6ae4.svg",
-    "main.7b64c541.css.map": "/portfolioSite/static/css/main.7b64c541.css.map",
-    "main.3e7ec169.js.map": "/portfolioSite/static/js/main.3e7ec169.js.map"
+    "main.bdaa055b.css.map": "/portfolioSite/static/css/main.bdaa055b.css.map",
+    "main.c3df7a13.js.map": "/portfolioSite/static/js/main.c3df7a13.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b64c541.css",
-    "static/js/main.3e7ec169.js"
+    "static/css/main.bdaa055b.css",
+    "static/js/main.c3df7a13.js"
   ]
 }
