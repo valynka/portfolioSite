@@ -36,7 +36,7 @@ const PortfolioArticleItem = forwardRef(
           <div className="article-card-img">
             <img src={img} className="card-img-top" alt={alt} />
           </div>
-          <div className="card-body d-flex align-items-end justify-content-center">
+          <div className="card-body d-flex justify-content-center">
             <h4
               className="card-title text-center"
               dangerouslySetInnerHTML={{ __html: title }}

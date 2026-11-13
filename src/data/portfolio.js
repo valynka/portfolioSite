@@ -1,5 +1,5 @@
+import iriska from "../img/iriska.jpg";
 import medical from "../img/medical.jpg";
-
 import sortableTable from "../img/sortable-table.jpg";
 import musicBox1 from "../img/music-box1.jpg";
 import musicBox2 from "../img/music-box2.jpg";
@@ -7,10 +7,10 @@ import chat from "../img/chat.jpg";
 
 import noiseCancellation from "../img/noise-cancellation.png";
 import noiseCancellationContent from "./noiseCancellationContent";
-import marketplace from "../img/marketplace.png";
-import marketplaceContent from "./marketplaceContent";
+import aiContent from "./aiContent";
 import countrylife from "../img/countrylife.png";
 import countryLifeContent from "./countryLifeContent";
+import ai from "../img/ai.png";
 
 import whale from "../img/whale.jpg";
 import whaleContent from "./whaleContent";
@@ -40,6 +40,12 @@ import procedureContent from "./procedureContent";
 
 
 export const portfolioWeb = [
+  {
+    img: iriska,
+    desc: "Сайт для поиска дома для одной очень хорошей собаки. Создан с использованием ИИ.",
+    alt: "Сайт Ириски",
+    link: "https://iriska-dom.ru/",
+  },
   {
     img: musicBox1,
     desc: "Портал &quot;Music Box&quot;, главная страница. Проект на курсе по верстке на Хекслет. <i>OOCSS</i>, <i>Atomic CSS</i>. <i>Flexbox</i>. <i>Grid Layout</i>. <i>SCSS</i>. <b>Адаптив</b>",
@@ -84,18 +90,18 @@ export const articles = [
     id: "countrylife",
   },
   {
-    img: marketplace,
+    img: ai,
     title:
-      "Как продавать на <span class='text-custom'>маркетплейсах</span> в 2026 году: <span class='text-custom'>четыре стратегии против низких цен</span>",
-    alt: 'Статья "Как продавать на маркетплейсах в 2026 году: четыре стратегии против низких цен"',
-    popupContent: marketplaceContent,
-    id: "marketplace",
+      "<span class='text-custom'>ИИ</span> сделает нас <span class='text-custom'>глупее</span> или <span class='text-custom'>научит думать?</span>",
+    alt: 'Статья "ИИ сделает нас глупее или научит думать?"',
+    popupContent: aiContent,
+    id: "ai",
   },
   {
     img: noiseCancellation,
     title:
-      "<span class='text-custom'>Шумоподавление</span> – зачем оно нужно, и что это за звери – <span class='text-custom'>ANC</span> и <span class='text-custom'>ENC?</span>",
-    alt: 'Статья "Шумоподавление – зачем оно нужно, и что это за звери – ANC и ENC?"',
+      "<span class='text-custom'>Шумоподавление</span> в наушниках: что такое <span class='text-custom'>ANC</span> и <span class='text-custom'>ENC</span> и зачем они нужны",
+    alt: 'Статья "Шумоподавление в наушниках: что такое ANC и ENC и зачем они нужны"',
     popupContent: noiseCancellationContent,
     id: "noiseCancellation",
   },
